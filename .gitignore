@@ -1,0 +1,13 @@
+# Local application and operating-system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Excel lock and backup files
+~$*.xlsx
+*.tmp
+
+# Local notes and environment files
+.env
+.env.*
+*.log
