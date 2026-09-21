@@ -312,3 +312,13 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 **Safeguard:** Do not attach broad administrator access as a shortcut. An explicit deny overrides an allow; use the smallest permission change that addresses the verified failure.
 
 **Status:** Next, review common network reachability checks.
+
+**Lab 05, Mini Mock Interview: First technical responses**
+
+**Cost variance:** Verify the dashboard change, then attribute it by provider, service, account, business unit, and owner. Do not turn off or resize resources merely because spend increased.
+
+**Load balancer 503:** Inspect target-group health and its reason code before checking health-check configuration, security groups, application logs, and recent deployments.
+
+**EC2-to-S3 AccessDenied:** Start with the EC2 instance role, denied action, and requested object path. Then inspect bucket policy, organization controls, permission boundaries, session policies, and KMS permissions as applicable.
+
+**Status:** Continue mock practice with cloud cost, SQL, and communication scenarios.
