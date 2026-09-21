@@ -73,4 +73,16 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **Takeaway:** Long-running non-production resources are candidates for investigation because development or test workloads may be able to follow a schedule. Validate their purpose and ownership before making a change.
 
-**Status:** Step 5 complete. Next, use `XLOOKUP` to map a cost center to its department or chargeback owner.
+**Lab 01, Step 6: Map a cost center with `XLOOKUP`**
+
+**Task:** Return the chargeback owner associated with cost center `CC-300`.
+
+**Formula:** `=XLOOKUP("CC-300",'Cost Centers'!A:A,'Cost Centers'!C:C)`
+
+**Result:** `Marcus Reed`
+
+**How it works:** `XLOOKUP` searches column A (`cost_center`) on the `Cost Centers` sheet for `CC-300`, then returns the corresponding value from column C (`chargeback_owner`).
+
+**Takeaway:** A lookup table translates billing metadata into accountable business information, which supports accurate showback or chargeback reporting.
+
+**Status:** Step 6 complete. Next, build a PivotTable to summarize monthly cost by business unit and month.
