@@ -49,7 +49,9 @@ water-prep/
 The remaining folders and lab materials will be added only when they are needed for the next learning phase:
 
 ```text
-data/  exercises/  sql/  python/  docs/
+data/  synthetic CSV used by the SQL lab
+sql/   local SQLite database, safe query prompt, and exercises
+python/  docs/  future modules
 ```
 
 ## Synthetic dataset

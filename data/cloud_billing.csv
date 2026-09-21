@@ -1,0 +1,541 @@
+month,cloud_provider,account,business_unit,cost_center,chargeback_owner,environment,service,resource_id,region,owner,usage_hours,monthly_cost,cpu_utilization_pct,storage_gb,tags_complete
+2026-06-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,EC2,res-00001,us-east-1,owner17@example.com,184,303.24,56.5,558,yes
+2026-06-01,Azure,azure-sales-prod,Sales,CC-400,Dana Lopez,prod,Bandwidth,res-00002,westus2,owner5@example.com,6,760.19,,777,yes
+2026-06-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,Lambda,res-00003,us-west-2,,618,761.13,,270,no
+2026-06-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,RDS,res-00004,us-east-1,owner8@example.com,46,395.7,,677,yes
+2026-06-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,RDS,res-00005,us-east-1,owner6@example.com,686,788.11,,273,yes
+2026-06-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,RDS,res-00006,us-west-2,owner3@example.com,57,887.45,,234,yes
+2026-06-01,GCP,gcp-data-dev,Data,CC-200,Priya Shah,dev,Cloud SQL,res-00007,us-west1,owner18@example.com,658,126.81,,469,yes
+2026-06-01,GCP,gcp-operations-prod,Operations,CC-300,Marcus Reed,prod,Cloud Functions,res-00008,us-central1,owner6@example.com,521,245.45,,505,yes
+2026-06-01,AWS,aws-finance-test,Finance,CC-500,Jamie Park,test,Lambda,res-00009,us-west-2,owner9@example.com,566,224.65,,11,yes
+2026-06-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,S3,res-00010,us-west-2,owner17@example.com,512,545.53,,1513,yes
+2026-06-01,Azure,azure-finance-test,Finance,CC-500,Jamie Park,test,Bandwidth,res-00011,westus2,owner10@example.com,500,246.77,,19,yes
+2026-06-01,AWS,aws-engineering-dev,Engineering,CC-100,Alex Chen,dev,EC2,res-00012,us-east-1,owner7@example.com,625,501.08,63.5,131,yes
+2026-06-01,Azure,azure-sales-test,Sales,CC-400,Dana Lopez,test,Azure SQL,res-00013,westus2,owner1@example.com,448,50.7,,529,yes
+2026-06-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,EC2,res-00014,us-east-1,owner16@example.com,418,475.63,8.6,243,yes
+2026-06-01,AWS,aws-engineering-dev,Engineering,CC-100,Alex Chen,dev,EC2,res-00015,us-west-2,owner4@example.com,723,369.05,35.5,746,yes
+2026-06-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,Lambda,res-00016,us-east-1,owner18@example.com,77,761.78,,453,yes
+2026-06-01,GCP,gcp-data-prod,Data,CC-200,Priya Shah,prod,Cloud Storage,res-00017,us-west1,owner13@example.com,218,829.76,,3335,yes
+2026-06-01,AWS,aws-finance-dev,Finance,CC-500,Jamie Park,dev,Lambda,res-00018,us-west-2,,158,408.74,,194,no
+2026-06-01,AWS,aws-finance-test,Finance,CC-500,Jamie Park,test,Lambda,res-00019,us-east-1,owner8@example.com,58,160.91,,520,yes
+2026-06-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,CloudFront,res-00020,us-east-1,owner7@example.com,429,600.24,,673,yes
+2026-06-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,S3,res-00021,us-east-1,owner18@example.com,9,627.23,,3804,yes
+2026-06-01,GCP,gcp-data-prod,Data,CC-200,Priya Shah,prod,Compute Engine,res-00022,us-central1,owner18@example.com,528,497.27,68.9,720,yes
+2026-06-01,GCP,gcp-operations-prod,Operations,CC-300,Marcus Reed,prod,Cloud Storage,res-00023,us-central1,owner7@example.com,566,376.09,,1323,yes
+2026-06-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,RDS,res-00024,us-west-2,owner9@example.com,283,209.94,,45,yes
+2026-06-01,Azure,azure-engineering-prod,Engineering,CC-100,Alex Chen,prod,Bandwidth,res-00025,eastus,,558,780.91,,36,no
+2026-06-01,GCP,gcp-operations-prod,Operations,CC-300,Marcus Reed,prod,Compute Engine,res-00026,us-central1,owner6@example.com,185,1275.9,15,573,yes
+2026-06-01,GCP,gcp-data-dev,Data,CC-200,Priya Shah,dev,Compute Engine,res-00027,us-west1,owner8@example.com,684,195.06,66.4,752,yes
+2026-06-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,S3,res-00028,us-east-1,owner12@example.com,408,380.59,,2739,yes
+2026-06-01,GCP,gcp-operations-test,Operations,CC-300,Marcus Reed,test,BigQuery,res-00029,us-central1,owner14@example.com,267,44.18,,182,yes
+2026-06-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,CloudFront,res-00030,us-east-1,owner18@example.com,260,690.33,,45,yes
+2026-06-01,Azure,azure-operations-prod,Operations,CC-300,Marcus Reed,prod,Blob Storage,res-00031,westus2,owner17@example.com,638,657.64,,2621,yes
+2026-06-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,RDS,res-00032,us-west-2,owner10@example.com,680,767.82,,388,yes
+2026-06-01,AWS,aws-sales-dev,Sales,CC-400,Dana Lopez,dev,S3,res-00033,us-west-2,owner6@example.com,476,136.93,,3669,yes
+2026-06-01,Azure,azure-operations-prod,Operations,CC-300,Marcus Reed,prod,Bandwidth,res-00034,eastus,owner8@example.com,688,341.74,,317,yes
+2026-06-01,Azure,azure-sales-test,Sales,CC-400,Dana Lopez,test,Functions,res-00035,eastus,owner1@example.com,735,62.47,,713,yes
+2026-06-01,GCP,gcp-data-prod,Data,CC-200,Priya Shah,prod,Cloud Functions,res-00036,us-west1,owner15@example.com,51,359.42,,570,yes
+2026-06-01,AWS,aws-finance-dev,Finance,CC-500,Jamie Park,dev,Lambda,res-00037,us-west-2,owner9@example.com,561,327.72,,456,yes
+2026-06-01,AWS,aws-sales-dev,Sales,CC-400,Dana Lopez,dev,CloudFront,res-00038,us-west-2,owner18@example.com,450,144.42,,79,yes
+2026-06-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,S3,res-00039,us-west-2,owner13@example.com,338,515.47,,4495,yes
+2026-06-01,Azure,azure-sales-prod,Sales,CC-400,Dana Lopez,prod,Bandwidth,res-00040,westus2,owner18@example.com,305,460.79,,771,yes
+2026-06-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,S3,res-00041,us-west-2,owner6@example.com,497,459.98,,287,yes
+2026-06-01,GCP,gcp-engineering-test,Engineering,CC-100,Alex Chen,test,BigQuery,res-00042,us-central1,owner9@example.com,85,80.48,,658,yes
+2026-06-01,AWS,aws-operations-dev,Operations,,Marcus Reed,dev,Lambda,res-00043,us-west-2,owner12@example.com,258,329.65,,83,no
+2026-06-01,GCP,gcp-engineering-test,Engineering,CC-100,Alex Chen,test,Compute Engine,res-00044,us-central1,owner6@example.com,712,192.59,52.1,244,yes
+2026-06-01,Azure,azure-operations-prod,Operations,CC-300,Marcus Reed,prod,Blob Storage,res-00045,eastus,,319,667.69,,4766,no
+2026-06-01,AWS,aws-operations-test,Operations,CC-300,Marcus Reed,test,EC2,res-00046,us-east-1,owner16@example.com,659,70.58,7.9,355,yes
+2026-06-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,Lambda,res-00047,us-west-2,owner9@example.com,630,737.74,,551,yes
+2026-06-01,GCP,gcp-sales-prod,Sales,CC-400,Dana Lopez,prod,Cloud SQL,res-00048,us-west1,owner11@example.com,583,760.26,,624,yes
+2026-06-01,Azure,azure-operations-test,Operations,CC-300,Marcus Reed,test,Azure SQL,res-00049,westus2,owner14@example.com,569,95.56,,10,yes
+2026-06-01,Azure,azure-sales-dev,Sales,CC-400,Dana Lopez,dev,Functions,res-00050,eastus,owner12@example.com,301,147.59,,226,yes
+2026-06-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,EBS,res-00051,us-west-2,owner4@example.com,277,361.01,,2561,yes
+2026-06-01,Azure,azure-data-dev,Data,CC-200,Priya Shah,dev,Blob Storage,res-00052,westus2,owner4@example.com,741,248.87,,4879,yes
+2026-06-01,AWS,aws-engineering-dev,Engineering,CC-100,Alex Chen,dev,RDS,res-00053,us-east-1,owner5@example.com,280,298.09,,46,yes
+2026-06-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,EC2,res-00054,us-west-2,owner2@example.com,531,565.29,8.9,52,yes
+2026-06-01,GCP,gcp-data-prod,Data,CC-200,Priya Shah,prod,Compute Engine,res-00055,us-west1,owner14@example.com,700,428.12,50.1,633,yes
+2026-06-01,AWS,aws-engineering-test,Engineering,,Alex Chen,test,EBS,res-00056,us-east-1,,640,82.77,,1778,no
+2026-06-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,CloudFront,res-00057,us-east-1,owner8@example.com,295,383.56,,723,yes
+2026-06-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,EBS,res-00058,us-east-1,owner6@example.com,663,834.06,,1270,yes
+2026-06-01,Azure,azure-sales-prod,Sales,CC-400,Dana Lopez,prod,Azure SQL,res-00059,westus2,owner3@example.com,716,987.54,,412,yes
+2026-06-01,Azure,azure-operations-prod,Operations,CC-300,Marcus Reed,prod,Bandwidth,res-00060,eastus,owner9@example.com,690,602.73,,589,yes
+2026-06-01,AWS,aws-sales-test,Sales,CC-400,Dana Lopez,test,CloudFront,res-00061,us-east-1,owner12@example.com,599,50.07,,446,yes
+2026-06-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,S3,res-00062,us-west-2,owner11@example.com,295,765.77,,3330,yes
+2026-06-01,Azure,azure-engineering-dev,Engineering,CC-100,Alex Chen,dev,Bandwidth,res-00063,westus2,owner15@example.com,423,190.24,,55,yes
+2026-06-01,AWS,aws-sales-test,Sales,,Dana Lopez,test,RDS,res-00064,us-west-2,owner6@example.com,124,95.04,,29,no
+2026-06-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,S3,res-00065,us-east-1,owner9@example.com,663,538.83,,1311,yes
+2026-06-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,Lambda,res-00066,us-east-1,owner14@example.com,613,717.33,,520,yes
+2026-06-01,AWS,aws-operations-dev,Operations,CC-300,Marcus Reed,dev,EC2,res-00067,us-west-2,owner7@example.com,232,323.36,38.3,495,yes
+2026-06-01,AWS,aws-engineering-prod,Engineering,,Alex Chen,prod,Lambda,res-00068,us-west-2,owner5@example.com,722,457.98,,390,no
+2026-06-01,AWS,aws-operations-test,Operations,CC-300,Marcus Reed,test,CloudFront,res-00069,us-west-2,,102,61.71,,538,no
+2026-06-01,AWS,aws-sales-dev,Sales,,Dana Lopez,dev,CloudFront,res-00070,us-west-2,owner16@example.com,690,174,,546,no
+2026-06-01,AWS,aws-operations-test,Operations,CC-300,Marcus Reed,test,EBS,res-00071,us-east-1,owner6@example.com,444,52.11,,856,yes
+2026-06-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,EC2,res-00072,us-west-2,owner8@example.com,229,917.93,14.2,421,yes
+2026-06-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,EBS,res-00073,us-east-1,owner12@example.com,476,667.88,,2406,yes
+2026-06-01,GCP,gcp-sales-test,Sales,CC-400,Dana Lopez,test,Cloud SQL,res-00074,us-central1,owner10@example.com,393,125.32,,494,yes
+2026-06-01,GCP,gcp-operations-prod,Operations,CC-300,Marcus Reed,prod,Cloud Functions,res-00075,us-central1,owner8@example.com,620,537.64,,763,yes
+2026-06-01,AWS,aws-operations-dev,Operations,CC-300,Marcus Reed,dev,CloudFront,res-00076,us-east-1,,643,292.68,,99,no
+2026-06-01,AWS,aws-operations-dev,Operations,CC-300,Marcus Reed,dev,RDS,res-00077,us-east-1,owner17@example.com,205,431.85,,135,yes
+2026-06-01,AWS,aws-operations-dev,Operations,CC-300,Marcus Reed,dev,Lambda,res-00078,us-west-2,owner13@example.com,117,110.67,,479,yes
+2026-06-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,Lambda,res-00079,us-east-1,owner12@example.com,465,664.44,,377,yes
+2026-06-01,AWS,aws-operations-test,Operations,,Marcus Reed,test,CloudFront,res-00080,us-east-1,owner14@example.com,663,184.24,,64,no
+2026-06-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,Lambda,res-00081,us-east-1,owner18@example.com,397,447.13,,464,yes
+2026-06-01,AWS,aws-engineering-test,Engineering,CC-100,Alex Chen,test,Lambda,res-00082,us-west-2,owner8@example.com,286,127.83,,33,yes
+2026-06-01,Azure,azure-operations-prod,Operations,CC-300,Marcus Reed,prod,Bandwidth,res-00083,westus2,owner7@example.com,194,863.29,,125,yes
+2026-06-01,AWS,aws-data-test,Data,CC-200,Priya Shah,test,RDS,res-00084,us-east-1,owner8@example.com,70,240.2,,783,yes
+2026-06-01,GCP,gcp-operations-test,Operations,CC-300,Marcus Reed,test,Compute Engine,res-00085,us-central1,,213,73.75,45.7,178,no
+2026-06-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,Lambda,res-00086,us-east-1,owner17@example.com,487,740.17,,459,yes
+2026-06-01,Azure,azure-operations-prod,Operations,CC-300,Marcus Reed,prod,Bandwidth,res-00087,eastus,,62,790.05,,490,no
+2026-06-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,EC2,res-00088,us-west-2,owner4@example.com,470,490.41,81.6,543,yes
+2026-06-01,Azure,azure-sales-prod,Sales,CC-400,Dana Lopez,prod,Blob Storage,res-00089,eastus,owner11@example.com,423,775.74,,2826,yes
+2026-06-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,S3,res-00090,us-east-1,,95,249.53,,3587,no
+2026-06-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,EBS,res-00091,us-west-2,owner17@example.com,738,877.25,,471,yes
+2026-06-01,AWS,aws-operations-test,Operations,CC-300,Marcus Reed,test,EC2,res-00092,us-west-2,,197,191.77,63.2,587,no
+2026-06-01,Azure,azure-engineering-prod,Engineering,CC-100,Alex Chen,prod,Azure SQL,res-00093,westus2,,347,212.06,,359,no
+2026-06-01,GCP,gcp-finance-prod,Finance,CC-500,Jamie Park,prod,Compute Engine,res-00094,us-west1,owner2@example.com,544,505.47,29.9,378,yes
+2026-06-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,EC2,res-00095,us-west-2,owner10@example.com,577,470.85,51,424,yes
+2026-06-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,RDS,res-00096,us-east-1,owner9@example.com,7,456.58,,209,yes
+2026-06-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,Lambda,res-00097,us-east-1,owner2@example.com,512,780.02,,572,yes
+2026-06-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,RDS,res-00098,us-west-2,owner11@example.com,726,552.85,,655,yes
+2026-06-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,EBS,res-00099,us-east-1,owner10@example.com,249,603.99,,3619,yes
+2026-06-01,Azure,azure-finance-dev,Finance,CC-500,Jamie Park,dev,Virtual Machines,res-00100,eastus,owner3@example.com,699,181.32,30.7,660,yes
+2026-06-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,CloudFront,res-00101,us-west-2,owner10@example.com,642,288.69,,323,yes
+2026-06-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,EC2,res-00102,us-east-1,owner17@example.com,138,294.06,32.1,293,yes
+2026-06-01,GCP,gcp-sales-test,Sales,CC-400,Dana Lopez,test,Compute Engine,res-00103,us-central1,owner3@example.com,409,65.96,50.8,513,yes
+2026-06-01,AWS,aws-sales-dev,Sales,CC-400,Dana Lopez,dev,Lambda,res-00104,us-east-1,owner2@example.com,372,199.47,,381,yes
+2026-06-01,AWS,aws-finance-dev,Finance,CC-500,Jamie Park,dev,EC2,res-00105,us-west-2,owner10@example.com,698,346.22,60.2,672,yes
+2026-06-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,CloudFront,res-00106,us-west-2,owner17@example.com,658,765.49,,336,yes
+2026-06-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,EC2,res-00107,us-east-1,owner4@example.com,429,397.8,77.9,497,yes
+2026-06-01,Azure,azure-engineering-dev,Engineering,,Alex Chen,dev,Bandwidth,res-00108,eastus,owner6@example.com,611,125.1,,385,no
+2026-06-01,AWS,aws-data-test,Data,CC-200,Priya Shah,test,EBS,res-00109,us-west-2,owner16@example.com,459,207.9,,1966,yes
+2026-06-01,Azure,azure-sales-prod,Sales,,Dana Lopez,prod,Bandwidth,res-00110,westus2,owner5@example.com,391,559.77,,514,no
+2026-06-01,AWS,aws-finance-test,Finance,CC-500,Jamie Park,test,RDS,res-00111,us-east-1,owner5@example.com,291,263.54,,85,yes
+2026-06-01,GCP,gcp-operations-test,Operations,CC-300,Marcus Reed,test,Cloud Functions,res-00112,us-west1,owner12@example.com,54,248.8,,405,yes
+2026-06-01,AWS,aws-operations-dev,Operations,,Marcus Reed,dev,EBS,res-00113,us-east-1,owner16@example.com,39,230.08,,2400,no
+2026-06-01,AWS,aws-data-test,Data,CC-200,Priya Shah,test,RDS,res-00114,us-west-2,owner14@example.com,113,46.58,,794,yes
+2026-06-01,AWS,aws-finance-dev,Finance,CC-500,Jamie Park,dev,Lambda,res-00115,us-east-1,owner14@example.com,735,60.56,,147,yes
+2026-06-01,AWS,aws-engineering-test,Engineering,,Alex Chen,test,RDS,res-00116,us-east-1,owner1@example.com,399,128.95,,481,no
+2026-06-01,AWS,aws-engineering-dev,Engineering,CC-100,Alex Chen,dev,EBS,res-00117,us-west-2,owner15@example.com,136,181.88,,413,yes
+2026-06-01,AWS,aws-engineering-dev,Engineering,CC-100,Alex Chen,dev,S3,res-00118,us-west-2,owner11@example.com,37,344.8,,2453,yes
+2026-06-01,GCP,gcp-sales-prod,Sales,CC-400,Dana Lopez,prod,BigQuery,res-00119,us-central1,owner9@example.com,292,920.85,,365,yes
+2026-06-01,GCP,gcp-sales-prod,Sales,CC-400,Dana Lopez,prod,Cloud Functions,res-00120,us-central1,owner3@example.com,508,538.22,,708,yes
+2026-06-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,S3,res-00121,us-east-1,owner14@example.com,81,655.86,,2736,yes
+2026-06-01,AWS,aws-operations-dev,Operations,CC-300,Marcus Reed,dev,EBS,res-00122,us-west-2,owner6@example.com,281,289.5,,519,yes
+2026-06-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,Lambda,res-00123,us-east-1,owner5@example.com,660,440.75,,375,yes
+2026-06-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,EC2,res-00124,us-west-2,owner13@example.com,487,449.65,27.8,285,yes
+2026-06-01,Azure,azure-data-test,Data,CC-200,Priya Shah,test,Functions,res-00125,westus2,owner6@example.com,710,46.29,,502,yes
+2026-06-01,AWS,aws-operations-dev,Operations,CC-300,Marcus Reed,dev,EBS,res-00126,us-east-1,owner6@example.com,563,167.98,,4491,yes
+2026-06-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,S3,res-00127,us-west-2,owner18@example.com,26,578.9,,3006,yes
+2026-06-01,AWS,aws-sales-dev,Sales,CC-400,Dana Lopez,dev,Lambda,res-00128,us-west-2,owner15@example.com,588,174.13,,75,yes
+2026-06-01,GCP,gcp-finance-prod,Finance,CC-500,Jamie Park,prod,BigQuery,res-00129,us-central1,owner5@example.com,443,961.07,,514,yes
+2026-06-01,GCP,gcp-operations-test,Operations,CC-300,Marcus Reed,test,Cloud Storage,res-00130,us-west1,owner10@example.com,80,90.38,,2102,yes
+2026-06-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,CloudFront,res-00131,us-west-2,owner9@example.com,577,774.17,,42,yes
+2026-06-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,EBS,res-00132,us-west-2,owner10@example.com,657,527.72,,2524,yes
+2026-06-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,Lambda,res-00133,us-west-2,owner12@example.com,621,405.06,,147,yes
+2026-06-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,CloudFront,res-00134,us-west-2,owner13@example.com,125,503.71,,273,yes
+2026-06-01,GCP,gcp-operations-test,Operations,CC-300,Marcus Reed,test,Cloud Storage,res-00135,us-west1,owner10@example.com,194,139.73,,1355,yes
+2026-06-01,AWS,aws-data-prod,Data,,Priya Shah,prod,Lambda,res-00136,us-west-2,owner16@example.com,49,382.58,,51,no
+2026-06-01,AWS,aws-operations-dev,Operations,CC-300,Marcus Reed,dev,S3,res-00137,us-west-2,owner18@example.com,374,265.3,,420,yes
+2026-06-01,AWS,aws-operations-test,Operations,CC-300,Marcus Reed,test,CloudFront,res-00138,us-east-1,owner12@example.com,131,104.6,,99,yes
+2026-06-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,CloudFront,res-00139,us-east-1,owner17@example.com,730,758.86,,341,yes
+2026-06-01,AWS,aws-finance-dev,Finance,,Jamie Park,dev,Lambda,res-00140,us-west-2,owner10@example.com,607,243.5,,344,no
+2026-06-01,AWS,aws-sales-dev,Sales,CC-400,Dana Lopez,dev,EC2,res-00141,us-east-1,owner6@example.com,691,424.27,40.5,671,yes
+2026-06-01,Azure,azure-data-test,Data,CC-200,Priya Shah,test,Functions,res-00142,eastus,owner11@example.com,32,34.17,,586,yes
+2026-06-01,AWS,aws-finance-test,Finance,CC-500,Jamie Park,test,CloudFront,res-00143,us-east-1,owner16@example.com,722,249.59,,141,yes
+2026-06-01,AWS,aws-operations-dev,Operations,CC-300,Marcus Reed,dev,CloudFront,res-00144,us-west-2,owner8@example.com,624,148.75,,495,yes
+2026-06-01,Azure,azure-sales-prod,Sales,CC-400,Dana Lopez,prod,Blob Storage,res-00145,westus2,owner13@example.com,573,387.21,,2290,yes
+2026-06-01,Azure,azure-engineering-prod,Engineering,CC-100,Alex Chen,prod,Azure SQL,res-00146,eastus,owner18@example.com,354,750.14,,452,yes
+2026-06-01,AWS,aws-finance-dev,Finance,CC-500,Jamie Park,dev,EC2,res-00147,us-east-1,,328,179.78,7,543,no
+2026-06-01,GCP,gcp-sales-prod,Sales,CC-400,Dana Lopez,prod,Cloud Functions,res-00148,us-central1,owner8@example.com,294,385.5,,328,yes
+2026-06-01,GCP,gcp-sales-test,Sales,,Dana Lopez,test,Cloud Storage,res-00149,us-central1,owner10@example.com,37,194.78,,3302,no
+2026-06-01,AWS,aws-operations-prod,Operations,,Marcus Reed,prod,EC2,res-00150,us-west-2,owner9@example.com,217,470.55,70.2,479,no
+2026-06-01,AWS,aws-finance-dev,Finance,CC-500,Jamie Park,dev,RDS,res-00151,us-east-1,owner17@example.com,179,440.38,,625,yes
+2026-06-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,S3,res-00152,us-east-1,owner11@example.com,6,456.17,,2186,yes
+2026-06-01,AWS,aws-operations-dev,Operations,CC-300,Marcus Reed,dev,EBS,res-00153,us-east-1,owner10@example.com,683,117.5,,1018,yes
+2026-06-01,GCP,gcp-finance-prod,Finance,CC-500,Jamie Park,prod,Cloud SQL,res-00154,us-central1,owner18@example.com,489,583.72,,156,yes
+2026-06-01,Azure,azure-data-dev,Data,CC-200,Priya Shah,dev,Blob Storage,res-00155,eastus,,538,190.24,,3709,no
+2026-06-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,CloudFront,res-00156,us-west-2,owner3@example.com,532,263.69,,452,yes
+2026-06-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,S3,res-00157,us-east-1,owner9@example.com,572,664.39,,3837,yes
+2026-06-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,EC2,res-00158,us-east-1,owner14@example.com,634,1390.65,3.9,70,yes
+2026-06-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,Lambda,res-00159,us-east-1,owner5@example.com,669,265.42,,356,yes
+2026-06-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,EC2,res-00160,us-west-2,,624,447.76,33,235,no
+2026-06-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,EC2,res-00161,us-east-1,owner18@example.com,688,1037.28,8.1,612,yes
+2026-06-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,CloudFront,res-00162,us-west-2,owner5@example.com,591,736.23,,612,yes
+2026-06-01,AWS,aws-engineering-dev,Engineering,CC-100,Alex Chen,dev,RDS,res-00163,us-east-1,owner13@example.com,641,274.19,,695,yes
+2026-06-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,S3,res-00164,us-west-2,owner2@example.com,246,396.53,,1896,yes
+2026-06-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,S3,res-00165,us-east-1,,338,844,,697,no
+2026-06-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,EC2,res-00166,us-east-1,owner4@example.com,570,497.87,19.5,340,yes
+2026-06-01,GCP,gcp-data-prod,Data,CC-200,Priya Shah,prod,BigQuery,res-00167,us-central1,owner12@example.com,565,849.13,,329,yes
+2026-06-01,GCP,gcp-engineering-dev,Engineering,,Alex Chen,dev,Cloud Functions,res-00168,us-west1,owner8@example.com,327,209.01,,208,no
+2026-06-01,AWS,aws-finance-dev,Finance,CC-500,Jamie Park,dev,CloudFront,res-00169,us-west-2,owner16@example.com,156,196.74,,200,yes
+2026-06-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,Lambda,res-00170,us-west-2,owner18@example.com,173,698.63,,143,yes
+2026-06-01,AWS,aws-engineering-dev,Engineering,,Alex Chen,dev,EC2,res-00171,us-west-2,owner16@example.com,220,178.7,10.9,236,no
+2026-06-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,Lambda,res-00172,us-west-2,owner6@example.com,548,192.34,,293,yes
+2026-06-01,AWS,aws-finance-dev,Finance,CC-500,Jamie Park,dev,S3,res-00173,us-west-2,owner8@example.com,273,405.35,,3301,yes
+2026-06-01,Azure,azure-engineering-prod,Engineering,CC-100,Alex Chen,prod,Virtual Machines,res-00174,westus2,owner11@example.com,466,798.07,46.7,57,yes
+2026-06-01,AWS,aws-engineering-prod,Engineering,,Alex Chen,prod,CloudFront,res-00175,us-west-2,owner18@example.com,277,845.39,,47,no
+2026-06-01,GCP,gcp-engineering-test,Engineering,CC-100,Alex Chen,test,Cloud SQL,res-00176,us-central1,owner13@example.com,729,177.18,,407,yes
+2026-06-01,AWS,aws-data-dev,Data,CC-200,Priya Shah,dev,EBS,res-00177,us-east-1,owner11@example.com,512,217.35,,2883,yes
+2026-06-01,AWS,aws-engineering-dev,Engineering,CC-100,Alex Chen,dev,RDS,res-00178,us-west-2,owner13@example.com,502,458.63,,233,yes
+2026-06-01,Azure,azure-engineering-prod,Engineering,CC-100,Alex Chen,prod,Virtual Machines,res-00179,westus2,owner12@example.com,729,510.01,15.2,398,yes
+2026-06-01,AWS,aws-sales-dev,Sales,,Dana Lopez,dev,Lambda,res-00180,us-west-2,owner11@example.com,105,259.52,,26,no
+2026-07-01,AWS,aws-finance-test,Finance,CC-500,Jamie Park,test,EC2,res-00181,us-east-1,owner14@example.com,665,150.39,8.1,701,yes
+2026-07-01,AWS,aws-sales-dev,Sales,CC-400,Dana Lopez,dev,S3,res-00182,us-east-1,owner13@example.com,468,62.44,,926,yes
+2026-07-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,EBS,res-00183,us-west-2,owner11@example.com,617,524.89,,1695,yes
+2026-07-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,CloudFront,res-00184,us-west-2,owner18@example.com,402,262,,373,yes
+2026-07-01,AWS,aws-sales-test,Sales,CC-400,Dana Lopez,test,EBS,res-00185,us-east-1,owner14@example.com,448,216.51,,2436,yes
+2026-07-01,AWS,aws-data-dev,Data,CC-200,Priya Shah,dev,RDS,res-00186,us-west-2,owner17@example.com,75,267.4,,459,yes
+2026-07-01,AWS,aws-operations-dev,Operations,CC-300,Marcus Reed,dev,EC2,res-00187,us-east-1,owner13@example.com,191,149.85,63.7,673,yes
+2026-07-01,Azure,azure-engineering-prod,Engineering,CC-100,Alex Chen,prod,Virtual Machines,res-00188,eastus,owner17@example.com,602,747.47,62,571,yes
+2026-07-01,AWS,aws-sales-test,Sales,CC-400,Dana Lopez,test,RDS,res-00189,us-east-1,owner7@example.com,118,149.7,,747,yes
+2026-07-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,EBS,res-00190,us-west-2,owner6@example.com,45,196.26,,992,yes
+2026-07-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,CloudFront,res-00191,us-west-2,owner14@example.com,473,754.38,,237,yes
+2026-07-01,GCP,gcp-finance-prod,Finance,CC-500,Jamie Park,prod,Cloud Functions,res-00192,us-central1,owner3@example.com,721,328.16,,219,yes
+2026-07-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,RDS,res-00193,us-east-1,owner13@example.com,268,921.26,,686,yes
+2026-07-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,Lambda,res-00194,us-west-2,owner10@example.com,629,241.02,,604,yes
+2026-07-01,AWS,aws-sales-dev,Sales,CC-400,Dana Lopez,dev,Lambda,res-00195,us-west-2,owner6@example.com,433,253.46,,190,yes
+2026-07-01,AWS,aws-sales-dev,Sales,CC-400,Dana Lopez,dev,RDS,res-00196,us-west-2,owner17@example.com,9,406.5,,496,yes
+2026-07-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,EBS,res-00197,us-east-1,owner8@example.com,578,753.03,,302,yes
+2026-07-01,AWS,aws-sales-dev,Sales,,Dana Lopez,dev,EBS,res-00198,us-east-1,owner18@example.com,586,255.52,,985,no
+2026-07-01,Azure,azure-data-test,Data,CC-200,Priya Shah,test,Bandwidth,res-00199,eastus,owner9@example.com,669,37.09,,769,yes
+2026-07-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,EC2,res-00200,us-west-2,owner12@example.com,704,779.54,53,169,yes
+2026-07-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,EBS,res-00201,us-west-2,owner2@example.com,526,277.62,,830,yes
+2026-07-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,S3,res-00202,us-west-2,owner14@example.com,253,532.41,,3267,yes
+2026-07-01,Azure,azure-sales-dev,Sales,CC-400,Dana Lopez,dev,Virtual Machines,res-00203,westus2,owner15@example.com,457,76.11,38.9,499,yes
+2026-07-01,Azure,azure-sales-prod,Sales,CC-400,Dana Lopez,prod,Bandwidth,res-00204,westus2,owner5@example.com,216,373.35,,506,yes
+2026-07-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,EBS,res-00205,us-west-2,owner14@example.com,16,849.19,,1067,yes
+2026-07-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,EBS,res-00206,us-west-2,,95,360.28,,3002,no
+2026-07-01,Azure,azure-sales-dev,Sales,CC-400,Dana Lopez,dev,Blob Storage,res-00207,eastus,,1,107.77,,1798,no
+2026-07-01,Azure,azure-data-prod,Data,CC-200,Priya Shah,prod,Functions,res-00208,eastus,owner10@example.com,392,706.15,,91,yes
+2026-07-01,Azure,azure-data-prod,Data,CC-200,Priya Shah,prod,Blob Storage,res-00209,eastus,owner5@example.com,624,496.87,,1394,yes
+2026-07-01,AWS,aws-engineering-test,Engineering,CC-100,Alex Chen,test,S3,res-00210,us-east-1,owner5@example.com,126,124.47,,4879,yes
+2026-07-01,AWS,aws-finance-dev,Finance,CC-500,Jamie Park,dev,CloudFront,res-00211,us-west-2,owner17@example.com,707,297.03,,27,yes
+2026-07-01,AWS,aws-engineering-dev,Engineering,,Alex Chen,dev,EBS,res-00212,us-east-1,owner17@example.com,506,239.85,,3211,no
+2026-07-01,AWS,aws-data-prod,Data,,Priya Shah,prod,RDS,res-00213,us-west-2,,374,772.48,,559,no
+2026-07-01,AWS,aws-engineering-test,Engineering,CC-100,Alex Chen,test,EC2,res-00214,us-west-2,,699,230.5,25.6,729,no
+2026-07-01,GCP,gcp-finance-prod,Finance,CC-500,Jamie Park,prod,Cloud Storage,res-00215,us-central1,owner3@example.com,317,705.57,,3633,yes
+2026-07-01,AWS,aws-operations-dev,Operations,CC-300,Marcus Reed,dev,EC2,res-00216,us-east-1,owner9@example.com,202,148.72,4,140,yes
+2026-07-01,Azure,azure-engineering-dev,Engineering,CC-100,Alex Chen,dev,Azure SQL,res-00217,eastus,owner3@example.com,343,95.44,,439,yes
+2026-07-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,CloudFront,res-00218,us-west-2,,105,665.37,,587,no
+2026-07-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,Lambda,res-00219,us-east-1,owner14@example.com,183,578.06,,36,yes
+2026-07-01,GCP,gcp-operations-test,Operations,CC-300,Marcus Reed,test,Cloud SQL,res-00220,us-west1,owner17@example.com,122,90.97,,514,yes
+2026-07-01,AWS,aws-operations-dev,Operations,CC-300,Marcus Reed,dev,Lambda,res-00221,us-west-2,owner10@example.com,335,62.87,,88,yes
+2026-07-01,AWS,aws-data-dev,Data,,Priya Shah,dev,Lambda,res-00222,us-east-1,owner1@example.com,154,68.61,,6,no
+2026-07-01,Azure,azure-engineering-prod,Engineering,CC-100,Alex Chen,prod,Azure SQL,res-00223,eastus,owner9@example.com,429,1002.86,,503,yes
+2026-07-01,GCP,gcp-sales-dev,Sales,CC-400,Dana Lopez,dev,BigQuery,res-00224,us-west1,,469,108.57,,765,no
+2026-07-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,S3,res-00225,us-west-2,owner7@example.com,402,409,,2722,yes
+2026-07-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,EC2,res-00226,us-west-2,owner4@example.com,496,1093.17,12.5,366,yes
+2026-07-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,EBS,res-00227,us-west-2,owner2@example.com,151,692.03,,797,yes
+2026-07-01,GCP,gcp-sales-test,Sales,CC-400,Dana Lopez,test,Compute Engine,res-00228,us-central1,owner13@example.com,176,252.26,39.5,143,yes
+2026-07-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,CloudFront,res-00229,us-east-1,owner3@example.com,22,322.38,,66,yes
+2026-07-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,EC2,res-00230,us-west-2,owner9@example.com,484,839.89,42.2,391,yes
+2026-07-01,AWS,aws-data-dev,Data,CC-200,Priya Shah,dev,CloudFront,res-00231,us-west-2,owner14@example.com,421,91.58,,563,yes
+2026-07-01,AWS,aws-finance-dev,Finance,CC-500,Jamie Park,dev,EBS,res-00232,us-west-2,owner17@example.com,730,341.32,,2991,yes
+2026-07-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,CloudFront,res-00233,us-west-2,owner6@example.com,59,561.19,,483,yes
+2026-07-01,AWS,aws-engineering-dev,Engineering,CC-100,Alex Chen,dev,EBS,res-00234,us-east-1,owner6@example.com,589,362.12,,3231,yes
+2026-07-01,Azure,azure-finance-prod,Finance,CC-500,Jamie Park,prod,Azure SQL,res-00235,westus2,owner16@example.com,581,324.66,,577,yes
+2026-07-01,AWS,aws-data-dev,Data,CC-200,Priya Shah,dev,EC2,res-00236,us-east-1,,619,165.66,40.8,339,no
+2026-07-01,Azure,azure-engineering-test,Engineering,CC-100,Alex Chen,test,Blob Storage,res-00237,westus2,owner11@example.com,74,158.92,,3110,yes
+2026-07-01,AWS,aws-sales-dev,Sales,CC-400,Dana Lopez,dev,Lambda,res-00238,us-east-1,owner8@example.com,724,394.38,,575,yes
+2026-07-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,EBS,res-00239,us-east-1,owner2@example.com,718,461.95,,4742,yes
+2026-07-01,Azure,azure-data-dev,Data,CC-200,Priya Shah,dev,Bandwidth,res-00240,eastus,owner11@example.com,508,88.01,,144,yes
+2026-07-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,EBS,res-00241,us-west-2,,214,679.09,,2094,no
+2026-07-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,S3,res-00242,us-west-2,owner8@example.com,359,450.25,,4523,yes
+2026-07-01,Azure,azure-engineering-prod,Engineering,CC-100,Alex Chen,prod,Azure SQL,res-00243,eastus,owner18@example.com,75,347.85,,350,yes
+2026-07-01,AWS,aws-sales-dev,Sales,CC-400,Dana Lopez,dev,CloudFront,res-00244,us-west-2,owner11@example.com,669,216.31,,168,yes
+2026-07-01,Azure,azure-operations-dev,Operations,,Marcus Reed,dev,Bandwidth,res-00245,westus2,,243,265.84,,98,no
+2026-07-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,EBS,res-00246,us-east-1,owner4@example.com,26,303,,1745,yes
+2026-07-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,EBS,res-00247,us-west-2,owner9@example.com,189,817.55,,3089,yes
+2026-07-01,Azure,azure-engineering-prod,Engineering,CC-100,Alex Chen,prod,Bandwidth,res-00248,eastus,owner8@example.com,87,427.53,,684,yes
+2026-07-01,Azure,azure-finance-dev,Finance,CC-500,Jamie Park,dev,Functions,res-00249,westus2,owner2@example.com,586,88.42,,241,yes
+2026-07-01,Azure,azure-data-prod,Data,CC-200,Priya Shah,prod,Bandwidth,res-00250,westus2,,177,879.96,,171,no
+2026-07-01,AWS,aws-data-test,Data,CC-200,Priya Shah,test,EBS,res-00251,us-west-2,owner9@example.com,327,151.45,,598,yes
+2026-07-01,AWS,aws-finance-dev,Finance,CC-500,Jamie Park,dev,EBS,res-00252,us-west-2,owner4@example.com,115,263.97,,3445,yes
+2026-07-01,AWS,aws-finance-test,Finance,CC-500,Jamie Park,test,RDS,res-00253,us-west-2,owner6@example.com,270,154.18,,392,yes
+2026-07-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,EBS,res-00254,us-west-2,,707,215.49,,1996,no
+2026-07-01,AWS,aws-sales-test,Sales,CC-400,Dana Lopez,test,RDS,res-00255,us-east-1,owner11@example.com,233,230.33,,137,yes
+2026-07-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,S3,res-00256,us-west-2,,496,804.38,,4281,no
+2026-07-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,CloudFront,res-00257,us-east-1,owner7@example.com,205,359.63,,59,yes
+2026-07-01,AWS,aws-engineering-dev,Engineering,CC-100,Alex Chen,dev,EBS,res-00258,us-east-1,owner18@example.com,381,123.93,,4054,yes
+2026-07-01,GCP,gcp-operations-prod,Operations,CC-300,Marcus Reed,prod,Compute Engine,res-00259,us-central1,owner9@example.com,246,1093.43,70.5,798,yes
+2026-07-01,Azure,azure-sales-test,Sales,CC-400,Dana Lopez,test,Virtual Machines,res-00260,eastus,owner14@example.com,695,121.5,66.3,229,yes
+2026-07-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,S3,res-00261,us-west-2,owner12@example.com,598,185.29,,888,yes
+2026-07-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,EBS,res-00262,us-west-2,owner10@example.com,283,800.27,,2713,yes
+2026-07-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,EC2,res-00263,us-west-2,owner2@example.com,223,672.64,60,671,yes
+2026-07-01,Azure,azure-data-dev,Data,CC-200,Priya Shah,dev,Azure SQL,res-00264,westus2,owner18@example.com,687,419,,367,yes
+2026-07-01,AWS,aws-finance-dev,Finance,CC-500,Jamie Park,dev,RDS,res-00265,us-east-1,owner10@example.com,696,161.01,,343,yes
+2026-07-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,CloudFront,res-00266,us-east-1,owner3@example.com,481,803.8,,54,yes
+2026-07-01,AWS,aws-sales-dev,Sales,CC-400,Dana Lopez,dev,EBS,res-00267,us-west-2,owner15@example.com,55,132.11,,1285,yes
+2026-07-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,EC2,res-00268,us-east-1,owner6@example.com,400,631.85,53.1,4,yes
+2026-07-01,AWS,aws-sales-dev,Sales,CC-400,Dana Lopez,dev,CloudFront,res-00269,us-west-2,owner12@example.com,439,73.58,,488,yes
+2026-07-01,Azure,azure-data-prod,Data,CC-200,Priya Shah,prod,Bandwidth,res-00270,eastus,owner5@example.com,641,359.15,,751,yes
+2026-07-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,EC2,res-00271,us-west-2,owner16@example.com,546,870.89,15.9,610,yes
+2026-07-01,GCP,gcp-engineering-prod,Engineering,CC-100,Alex Chen,prod,Cloud Functions,res-00272,us-central1,owner2@example.com,216,195.78,,751,yes
+2026-07-01,Azure,azure-engineering-dev,Engineering,CC-100,Alex Chen,dev,Bandwidth,res-00273,eastus,owner14@example.com,677,67.11,,110,yes
+2026-07-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,EBS,res-00274,us-east-1,owner5@example.com,308,656.4,,3497,yes
+2026-07-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,CloudFront,res-00275,us-east-1,owner7@example.com,509,618.48,,203,yes
+2026-07-01,AWS,aws-sales-test,Sales,CC-400,Dana Lopez,test,CloudFront,res-00276,us-west-2,owner16@example.com,338,229.51,,240,yes
+2026-07-01,AWS,aws-engineering-test,Engineering,CC-100,Alex Chen,test,EBS,res-00277,us-east-1,owner2@example.com,467,208.9,,2475,yes
+2026-07-01,Azure,azure-engineering-prod,Engineering,CC-100,Alex Chen,prod,Functions,res-00278,eastus,owner15@example.com,9,657.62,,141,yes
+2026-07-01,Azure,azure-operations-prod,Operations,CC-300,Marcus Reed,prod,Azure SQL,res-00279,westus2,owner14@example.com,409,432.08,,467,yes
+2026-07-01,AWS,aws-engineering-test,Engineering,CC-100,Alex Chen,test,EBS,res-00280,us-east-1,owner15@example.com,106,155.17,,3458,yes
+2026-07-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,EC2,res-00281,us-west-2,owner17@example.com,195,266.38,73.1,451,yes
+2026-07-01,AWS,aws-operations-dev,Operations,CC-300,Marcus Reed,dev,EBS,res-00282,us-east-1,owner5@example.com,443,298.94,,2086,yes
+2026-07-01,GCP,gcp-engineering-dev,Engineering,CC-100,Alex Chen,dev,Compute Engine,res-00283,us-central1,owner2@example.com,597,108.69,70.1,507,yes
+2026-07-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,S3,res-00284,us-west-2,owner1@example.com,90,501.89,,4133,yes
+2026-07-01,AWS,aws-engineering-dev,Engineering,CC-100,Alex Chen,dev,EC2,res-00285,us-west-2,owner11@example.com,708,502.66,47.4,670,yes
+2026-07-01,AWS,aws-operations-dev,Operations,CC-300,Marcus Reed,dev,EBS,res-00286,us-east-1,owner10@example.com,99,187.85,,1866,yes
+2026-07-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,S3,res-00287,us-west-2,owner13@example.com,109,619.81,,2133,yes
+2026-07-01,AWS,aws-engineering-dev,Engineering,CC-100,Alex Chen,dev,RDS,res-00288,us-east-1,owner17@example.com,648,388.67,,688,yes
+2026-07-01,AWS,aws-finance-test,Finance,CC-500,Jamie Park,test,EC2,res-00289,us-west-2,owner13@example.com,721,261.69,64.7,181,yes
+2026-07-01,Azure,azure-operations-prod,Operations,CC-300,Marcus Reed,prod,Blob Storage,res-00290,westus2,owner17@example.com,301,759.45,,3759,yes
+2026-07-01,Azure,azure-data-prod,Data,CC-200,Priya Shah,prod,Bandwidth,res-00291,westus2,owner6@example.com,703,843.26,,353,yes
+2026-07-01,AWS,aws-operations-dev,Operations,CC-300,Marcus Reed,dev,EC2,res-00292,us-west-2,owner6@example.com,687,310.23,25.6,432,yes
+2026-07-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,EC2,res-00293,us-east-1,owner18@example.com,447,779.5,67.3,104,yes
+2026-07-01,Azure,azure-engineering-test,Engineering,CC-100,Alex Chen,test,Azure SQL,res-00294,westus2,owner9@example.com,426,37.78,,701,yes
+2026-07-01,Azure,azure-data-test,Data,CC-200,Priya Shah,test,Functions,res-00295,westus2,owner7@example.com,602,189.48,,559,yes
+2026-07-01,Azure,azure-data-dev,Data,CC-200,Priya Shah,dev,Blob Storage,res-00296,eastus,,386,260.38,,382,no
+2026-07-01,GCP,gcp-data-test,Data,CC-200,Priya Shah,test,Compute Engine,res-00297,us-central1,owner6@example.com,720,188.79,51.6,677,yes
+2026-07-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,CloudFront,res-00298,us-west-2,owner17@example.com,226,657.6,,218,yes
+2026-07-01,Azure,azure-engineering-dev,Engineering,CC-100,Alex Chen,dev,Virtual Machines,res-00299,westus2,owner4@example.com,326,184.72,74.5,628,yes
+2026-07-01,AWS,aws-operations-dev,Operations,CC-300,Marcus Reed,dev,CloudFront,res-00300,us-west-2,owner3@example.com,498,294.55,,44,yes
+2026-07-01,GCP,gcp-finance-prod,Finance,CC-500,Jamie Park,prod,BigQuery,res-00301,us-central1,owner4@example.com,215,728.24,,686,yes
+2026-07-01,GCP,gcp-engineering-dev,Engineering,CC-100,Alex Chen,dev,Cloud Functions,res-00302,us-central1,owner6@example.com,24,73.64,,470,yes
+2026-07-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,S3,res-00303,us-west-2,,645,491.78,,3363,no
+2026-07-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,EBS,res-00304,us-east-1,owner3@example.com,366,256.42,,4169,yes
+2026-07-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,EBS,res-00305,us-east-1,owner5@example.com,139,753.67,,3253,yes
+2026-07-01,GCP,gcp-engineering-dev,Engineering,CC-100,Alex Chen,dev,Cloud SQL,res-00306,us-central1,owner3@example.com,126,316.02,,42,yes
+2026-07-01,GCP,gcp-data-prod,Data,CC-200,Priya Shah,prod,Cloud SQL,res-00307,us-central1,owner6@example.com,164,389.81,,188,yes
+2026-07-01,AWS,aws-sales-dev,Sales,CC-400,Dana Lopez,dev,CloudFront,res-00308,us-east-1,owner16@example.com,297,95.35,,687,yes
+2026-07-01,Azure,azure-engineering-prod,Engineering,CC-100,Alex Chen,prod,Blob Storage,res-00309,eastus,owner5@example.com,198,529.82,,2653,yes
+2026-07-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,Lambda,res-00310,us-east-1,owner5@example.com,226,712.67,,729,yes
+2026-07-01,AWS,aws-operations-dev,Operations,CC-300,Marcus Reed,dev,Lambda,res-00311,us-west-2,owner5@example.com,564,278.39,,111,yes
+2026-07-01,Azure,azure-engineering-test,Engineering,CC-100,Alex Chen,test,Virtual Machines,res-00312,eastus,owner16@example.com,675,189.19,48.7,787,yes
+2026-07-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,CloudFront,res-00313,us-east-1,owner6@example.com,406,541.56,,372,yes
+2026-07-01,AWS,aws-finance-dev,Finance,,Jamie Park,dev,CloudFront,res-00314,us-east-1,owner9@example.com,495,334.13,,367,no
+2026-07-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,RDS,res-00315,us-west-2,owner17@example.com,47,1018.93,,40,yes
+2026-07-01,Azure,azure-finance-dev,Finance,CC-500,Jamie Park,dev,Bandwidth,res-00316,westus2,owner17@example.com,669,295.2,,387,yes
+2026-07-01,AWS,aws-operations-dev,Operations,CC-300,Marcus Reed,dev,Lambda,res-00317,us-west-2,owner15@example.com,498,62.38,,493,yes
+2026-07-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,S3,res-00318,us-west-2,owner4@example.com,616,656,,1019,yes
+2026-07-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,S3,res-00319,us-east-1,,130,606.49,,4748,no
+2026-07-01,AWS,aws-finance-test,Finance,CC-500,Jamie Park,test,Lambda,res-00320,us-east-1,owner15@example.com,736,48.86,,745,yes
+2026-07-01,AWS,aws-sales-dev,Sales,,Dana Lopez,dev,S3,res-00321,us-east-1,owner15@example.com,638,320.71,,4234,no
+2026-07-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,S3,res-00322,us-west-2,owner18@example.com,153,307.74,,838,yes
+2026-07-01,AWS,aws-finance-dev,Finance,CC-500,Jamie Park,dev,S3,res-00323,us-east-1,owner17@example.com,694,193.34,,3584,yes
+2026-07-01,AWS,aws-operations-dev,Operations,CC-300,Marcus Reed,dev,Lambda,res-00324,us-east-1,owner3@example.com,435,335.71,,137,yes
+2026-07-01,AWS,aws-engineering-dev,Engineering,CC-100,Alex Chen,dev,S3,res-00325,us-east-1,owner11@example.com,591,62.59,,4330,yes
+2026-07-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,CloudFront,res-00326,us-west-2,owner7@example.com,578,620.55,,374,yes
+2026-07-01,AWS,aws-finance-dev,Finance,CC-500,Jamie Park,dev,RDS,res-00327,us-west-2,owner4@example.com,314,361.07,,591,yes
+2026-07-01,Azure,azure-engineering-prod,Engineering,,Alex Chen,prod,Blob Storage,res-00328,westus2,owner13@example.com,346,622.1,,4560,no
+2026-07-01,AWS,aws-sales-test,Sales,CC-400,Dana Lopez,test,S3,res-00329,us-west-2,owner13@example.com,90,163.99,,574,yes
+2026-07-01,Azure,azure-finance-prod,Finance,,Jamie Park,prod,Azure SQL,res-00330,eastus,owner17@example.com,655,570.47,,506,no
+2026-07-01,AWS,aws-data-dev,Data,CC-200,Priya Shah,dev,CloudFront,res-00331,us-east-1,owner9@example.com,368,411.23,,244,yes
+2026-07-01,AWS,aws-data-dev,Data,CC-200,Priya Shah,dev,CloudFront,res-00332,us-east-1,owner12@example.com,92,358.72,,562,yes
+2026-07-01,AWS,aws-sales-test,Sales,CC-400,Dana Lopez,test,S3,res-00333,us-east-1,owner10@example.com,267,45.92,,1483,yes
+2026-07-01,AWS,aws-finance-dev,Finance,CC-500,Jamie Park,dev,RDS,res-00334,us-west-2,owner11@example.com,710,302.15,,453,yes
+2026-07-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,CloudFront,res-00335,us-west-2,owner8@example.com,69,636.24,,391,yes
+2026-07-01,AWS,aws-engineering-dev,Engineering,CC-100,Alex Chen,dev,CloudFront,res-00336,us-west-2,owner3@example.com,254,302.53,,294,yes
+2026-07-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,S3,res-00337,us-east-1,owner8@example.com,510,349.1,,1685,yes
+2026-07-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,S3,res-00338,us-east-1,owner2@example.com,692,621.96,,4085,yes
+2026-07-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,CloudFront,res-00339,us-west-2,owner14@example.com,407,720.12,,227,yes
+2026-07-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,Lambda,res-00340,us-east-1,owner7@example.com,715,511.25,,530,yes
+2026-07-01,AWS,aws-data-dev,Data,CC-200,Priya Shah,dev,RDS,res-00341,us-east-1,owner14@example.com,275,211.04,,482,yes
+2026-07-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,Lambda,res-00342,us-east-1,owner8@example.com,589,344.57,,702,yes
+2026-07-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,EBS,res-00343,us-east-1,owner17@example.com,180,539.71,,3503,yes
+2026-07-01,AWS,aws-finance-test,Finance,CC-500,Jamie Park,test,RDS,res-00344,us-east-1,owner16@example.com,407,240.4,,101,yes
+2026-07-01,Azure,azure-operations-prod,Operations,CC-300,Marcus Reed,prod,Azure SQL,res-00345,westus2,owner7@example.com,352,547.94,,20,yes
+2026-07-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,RDS,res-00346,us-west-2,owner5@example.com,457,522.53,,80,yes
+2026-07-01,GCP,gcp-finance-dev,Finance,CC-500,Jamie Park,dev,Cloud Functions,res-00347,us-central1,owner9@example.com,81,172.85,,165,yes
+2026-07-01,GCP,gcp-finance-dev,Finance,CC-500,Jamie Park,dev,Cloud SQL,res-00348,us-west1,owner9@example.com,423,78.56,,171,yes
+2026-07-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,S3,res-00349,us-east-1,owner3@example.com,484,218.75,,4542,yes
+2026-07-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,Lambda,res-00350,us-west-2,owner2@example.com,453,271.02,,641,yes
+2026-07-01,AWS,aws-sales-test,Sales,CC-400,Dana Lopez,test,Lambda,res-00351,us-west-2,owner15@example.com,561,148.64,,455,yes
+2026-07-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,CloudFront,res-00352,us-west-2,owner14@example.com,493,343.53,,552,yes
+2026-07-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,S3,res-00353,us-east-1,owner14@example.com,704,861.81,,4079,yes
+2026-07-01,Azure,azure-operations-prod,Operations,CC-300,Marcus Reed,prod,Bandwidth,res-00354,westus2,owner13@example.com,404,297.55,,255,yes
+2026-07-01,AWS,aws-finance-dev,Finance,CC-500,Jamie Park,dev,CloudFront,res-00355,us-west-2,owner3@example.com,291,351.17,,664,yes
+2026-07-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,CloudFront,res-00356,us-west-2,owner6@example.com,192,193.96,,328,yes
+2026-07-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,Lambda,res-00357,us-east-1,owner16@example.com,15,336.38,,505,yes
+2026-07-01,Azure,azure-engineering-test,Engineering,CC-100,Alex Chen,test,Azure SQL,res-00358,eastus,owner7@example.com,57,153.45,,272,yes
+2026-07-01,AWS,aws-engineering-test,Engineering,CC-100,Alex Chen,test,EC2,res-00359,us-east-1,owner7@example.com,474,115.34,11.3,453,yes
+2026-07-01,AWS,aws-data-dev,Data,CC-200,Priya Shah,dev,RDS,res-00360,us-east-1,owner12@example.com,562,268.23,,533,yes
+2026-08-01,AWS,aws-data-dev,Data,CC-200,Priya Shah,dev,EC2,res-00361,us-west-2,owner16@example.com,95,334.11,16.2,282,yes
+2026-08-01,Azure,azure-data-prod,Data,CC-200,Priya Shah,prod,Blob Storage,res-00362,westus2,owner4@example.com,640,223.04,,541,yes
+2026-08-01,GCP,gcp-sales-dev,Sales,CC-400,Dana Lopez,dev,Cloud SQL,res-00363,us-central1,owner16@example.com,705,124.78,,386,yes
+2026-08-01,AWS,aws-data-dev,Data,CC-200,Priya Shah,dev,Lambda,res-00364,us-west-2,owner18@example.com,331,372.36,,749,yes
+2026-08-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,RDS,res-00365,us-east-1,owner12@example.com,653,520.85,,518,yes
+2026-08-01,Azure,azure-sales-prod,Sales,CC-400,Dana Lopez,prod,Bandwidth,res-00366,westus2,owner4@example.com,564,621.39,,157,yes
+2026-08-01,AWS,aws-data-test,Data,CC-200,Priya Shah,test,S3,res-00367,us-east-1,owner13@example.com,109,171.19,,4026,yes
+2026-08-01,Azure,azure-engineering-prod,Engineering,,Alex Chen,prod,Azure SQL,res-00368,eastus,owner15@example.com,13,749.96,,213,no
+2026-08-01,AWS,aws-operations-dev,Operations,CC-300,Marcus Reed,dev,Lambda,res-00369,us-east-1,owner3@example.com,631,324.35,,272,yes
+2026-08-01,AWS,aws-data-dev,Data,CC-200,Priya Shah,dev,EBS,res-00370,us-east-1,owner18@example.com,197,265.21,,4360,yes
+2026-08-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,EBS,res-00371,us-west-2,owner13@example.com,719,815.63,,3548,yes
+2026-08-01,AWS,aws-sales-test,Sales,CC-400,Dana Lopez,test,CloudFront,res-00372,us-west-2,owner11@example.com,563,169.31,,332,yes
+2026-08-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,CloudFront,res-00373,us-west-2,owner1@example.com,458,180.14,,406,yes
+2026-08-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,RDS,res-00374,us-west-2,owner18@example.com,22,887.57,,790,yes
+2026-08-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,EC2,res-00375,us-east-1,owner7@example.com,221,593.83,23.9,596,yes
+2026-08-01,Azure,azure-sales-test,Sales,CC-400,Dana Lopez,test,Blob Storage,res-00376,eastus,owner2@example.com,609,113.94,,2510,yes
+2026-08-01,GCP,gcp-sales-test,Sales,CC-400,Dana Lopez,test,Cloud Functions,res-00377,us-central1,,232,32.52,,765,no
+2026-08-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,CloudFront,res-00378,us-east-1,owner17@example.com,156,665.02,,51,yes
+2026-08-01,Azure,azure-data-prod,Data,CC-200,Priya Shah,prod,Blob Storage,res-00379,westus2,owner14@example.com,585,574.67,,453,yes
+2026-08-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,CloudFront,res-00380,us-east-1,owner9@example.com,574,897.9,,630,yes
+2026-08-01,GCP,gcp-engineering-dev,Engineering,CC-100,Alex Chen,dev,Compute Engine,res-00381,us-west1,owner15@example.com,724,488.31,30.5,328,yes
+2026-08-01,GCP,gcp-data-dev,Data,CC-200,Priya Shah,dev,Cloud Storage,res-00382,us-central1,owner5@example.com,87,147.5,,970,yes
+2026-08-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,EBS,res-00383,us-west-2,owner17@example.com,23,330.49,,2768,yes
+2026-08-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,S3,res-00384,us-east-1,,261,223.28,,1445,no
+2026-08-01,AWS,aws-operations-dev,Operations,CC-300,Marcus Reed,dev,Lambda,res-00385,us-west-2,owner13@example.com,110,378.02,,19,yes
+2026-08-01,GCP,gcp-finance-dev,Finance,CC-500,Jamie Park,dev,Cloud Functions,res-00386,us-central1,owner2@example.com,203,261.85,,512,yes
+2026-08-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,Lambda,res-00387,us-west-2,owner9@example.com,363,397.67,,640,yes
+2026-08-01,GCP,gcp-finance-test,Finance,CC-500,Jamie Park,test,Compute Engine,res-00388,us-central1,owner8@example.com,235,142.61,30,402,yes
+2026-08-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,RDS,res-00389,us-east-1,owner5@example.com,211,321.74,,668,yes
+2026-08-01,AWS,aws-sales-test,Sales,CC-400,Dana Lopez,test,S3,res-00390,us-east-1,owner4@example.com,671,152.61,,4677,yes
+2026-08-01,AWS,aws-operations-test,Operations,,Marcus Reed,test,EC2,res-00391,us-west-2,owner4@example.com,501,294.14,27,763,no
+2026-08-01,GCP,gcp-operations-dev,Operations,CC-300,Marcus Reed,dev,BigQuery,res-00392,us-central1,owner16@example.com,610,79.8,,237,yes
+2026-08-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,EBS,res-00393,us-west-2,owner1@example.com,503,279.01,,3931,yes
+2026-08-01,AWS,aws-data-dev,Data,CC-200,Priya Shah,dev,EBS,res-00394,us-east-1,owner15@example.com,181,236.38,,3648,yes
+2026-08-01,Azure,azure-sales-dev,Sales,CC-400,Dana Lopez,dev,Bandwidth,res-00395,westus2,owner2@example.com,626,253.02,,760,yes
+2026-08-01,Azure,azure-data-dev,Data,CC-200,Priya Shah,dev,Virtual Machines,res-00396,westus2,owner10@example.com,120,670.78,47.1,528,yes
+2026-08-01,AWS,aws-finance-test,Finance,CC-500,Jamie Park,test,EC2,res-00397,us-west-2,owner13@example.com,741,198.5,38.7,739,yes
+2026-08-01,AWS,aws-data-test,Data,CC-200,Priya Shah,test,CloudFront,res-00398,us-east-1,owner4@example.com,256,205.23,,331,yes
+2026-08-01,AWS,aws-finance-dev,Finance,,Jamie Park,dev,EC2,res-00399,us-east-1,owner6@example.com,467,606.89,14.2,44,no
+2026-08-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,EBS,res-00400,us-east-1,owner1@example.com,120,871.51,,1127,yes
+2026-08-01,AWS,aws-finance-test,Finance,CC-500,Jamie Park,test,EC2,res-00401,us-east-1,owner18@example.com,715,202.83,49.5,487,yes
+2026-08-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,EC2,res-00402,us-east-1,owner6@example.com,671,523,69.2,305,yes
+2026-08-01,Azure,azure-finance-dev,Finance,CC-500,Jamie Park,dev,Bandwidth,res-00403,eastus,owner10@example.com,466,395.33,,767,yes
+2026-08-01,Azure,azure-finance-prod,Finance,CC-500,Jamie Park,prod,Functions,res-00404,westus2,owner17@example.com,137,680.13,,124,yes
+2026-08-01,AWS,aws-finance-test,Finance,CC-500,Jamie Park,test,CloudFront,res-00405,us-west-2,owner14@example.com,741,185.5,,705,yes
+2026-08-01,AWS,aws-operations-test,Operations,CC-300,Marcus Reed,test,CloudFront,res-00406,us-west-2,owner8@example.com,532,69.58,,746,yes
+2026-08-01,AWS,aws-sales-dev,Sales,,Dana Lopez,dev,EC2,res-00407,us-east-1,owner10@example.com,292,281.51,4.8,424,no
+2026-08-01,AWS,aws-operations-dev,Operations,CC-300,Marcus Reed,dev,CloudFront,res-00408,us-east-1,owner1@example.com,702,320.78,,341,yes
+2026-08-01,Azure,azure-sales-dev,Sales,CC-400,Dana Lopez,dev,Functions,res-00409,eastus,owner11@example.com,493,381.14,,159,yes
+2026-08-01,GCP,gcp-finance-prod,Finance,CC-500,Jamie Park,prod,Compute Engine,res-00410,us-west1,owner3@example.com,648,744.66,45.3,213,yes
+2026-08-01,AWS,aws-finance-test,Finance,CC-500,Jamie Park,test,Lambda,res-00411,us-west-2,owner11@example.com,191,97.82,,609,yes
+2026-08-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,S3,res-00412,us-west-2,owner7@example.com,221,397.67,,4351,yes
+2026-08-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,Lambda,res-00413,us-west-2,owner4@example.com,495,809.19,,750,yes
+2026-08-01,Azure,azure-data-dev,Data,CC-200,Priya Shah,dev,Blob Storage,res-00414,westus2,owner3@example.com,396,171.95,,4329,yes
+2026-08-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,EBS,res-00415,us-west-2,owner11@example.com,654,411.03,,1769,yes
+2026-08-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,S3,res-00416,us-east-1,owner10@example.com,211,432.23,,4494,yes
+2026-08-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,RDS,res-00417,us-east-1,owner3@example.com,29,954.93,,482,yes
+2026-08-01,AWS,aws-sales-dev,Sales,CC-400,Dana Lopez,dev,CloudFront,res-00418,us-west-2,owner15@example.com,340,301.51,,202,yes
+2026-08-01,Azure,azure-engineering-prod,Engineering,CC-100,Alex Chen,prod,Functions,res-00419,westus2,owner9@example.com,481,862.16,,237,yes
+2026-08-01,Azure,azure-operations-prod,Operations,CC-300,Marcus Reed,prod,Azure SQL,res-00420,eastus,owner10@example.com,66,300.47,,486,yes
+2026-08-01,AWS,aws-sales-dev,Sales,CC-400,Dana Lopez,dev,EC2,res-00421,us-east-1,owner18@example.com,413,314.74,46.9,72,yes
+2026-08-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,S3,res-00422,us-west-2,owner3@example.com,580,572.06,,2853,yes
+2026-08-01,Azure,azure-finance-dev,Finance,CC-500,Jamie Park,dev,Virtual Machines,res-00423,westus2,owner2@example.com,728,505.15,10.7,455,yes
+2026-08-01,GCP,gcp-data-dev,Data,CC-200,Priya Shah,dev,Compute Engine,res-00424,us-west1,owner10@example.com,624,215.23,26,630,yes
+2026-08-01,Azure,azure-engineering-dev,Engineering,CC-100,Alex Chen,dev,Azure SQL,res-00425,westus2,owner1@example.com,130,442.05,,301,yes
+2026-08-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,RDS,res-00426,us-west-2,owner7@example.com,640,796.35,,325,yes
+2026-08-01,AWS,aws-operations-test,Operations,CC-300,Marcus Reed,test,Lambda,res-00427,us-east-1,owner5@example.com,295,172.65,,686,yes
+2026-08-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,S3,res-00428,us-west-2,owner15@example.com,466,628.74,,3537,yes
+2026-08-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,EC2,res-00429,us-east-1,owner12@example.com,593,743.72,24.3,559,yes
+2026-08-01,Azure,azure-finance-test,Finance,CC-500,Jamie Park,test,Blob Storage,res-00430,westus2,owner16@example.com,476,49.46,,4284,yes
+2026-08-01,Azure,azure-finance-prod,Finance,CC-500,Jamie Park,prod,Bandwidth,res-00431,eastus,owner16@example.com,351,740.54,,547,yes
+2026-08-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,RDS,res-00432,us-west-2,owner2@example.com,744,422.65,,577,yes
+2026-08-01,Azure,azure-operations-prod,Operations,CC-300,Marcus Reed,prod,Virtual Machines,res-00433,eastus,owner4@example.com,597,451.85,9.1,284,yes
+2026-08-01,Azure,azure-operations-dev,Operations,CC-300,Marcus Reed,dev,Functions,res-00434,westus2,owner11@example.com,717,347.77,,241,yes
+2026-08-01,AWS,aws-sales-dev,Sales,CC-400,Dana Lopez,dev,S3,res-00435,us-west-2,,392,321.36,,1999,no
+2026-08-01,Azure,azure-data-prod,Data,CC-200,Priya Shah,prod,Virtual Machines,res-00436,westus2,owner9@example.com,388,1392.88,40.6,770,yes
+2026-08-01,AWS,aws-sales-dev,Sales,CC-400,Dana Lopez,dev,Lambda,res-00437,us-east-1,owner9@example.com,99,404.23,,544,yes
+2026-08-01,AWS,aws-finance-prod,Finance,,Jamie Park,prod,EBS,res-00438,us-east-1,owner6@example.com,688,734.76,,4872,no
+2026-08-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,EC2,res-00439,us-east-1,owner7@example.com,536,791.95,15.1,742,yes
+2026-08-01,Azure,azure-engineering-test,Engineering,CC-100,Alex Chen,test,Virtual Machines,res-00440,eastus,owner15@example.com,464,374.75,54.9,663,yes
+2026-08-01,AWS,aws-sales-dev,Sales,,Dana Lopez,dev,RDS,res-00441,us-west-2,owner13@example.com,263,183.8,,165,no
+2026-08-01,GCP,gcp-data-prod,Data,CC-200,Priya Shah,prod,Cloud SQL,res-00442,us-west1,owner18@example.com,205,532.1,,624,yes
+2026-08-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,Lambda,res-00443,us-east-1,owner16@example.com,72,703.83,,585,yes
+2026-08-01,GCP,gcp-operations-prod,Operations,CC-300,Marcus Reed,prod,Cloud Functions,res-00444,us-west1,owner16@example.com,400,182.67,,588,yes
+2026-08-01,Azure,azure-finance-prod,Finance,CC-500,Jamie Park,prod,Virtual Machines,res-00445,westus2,owner3@example.com,573,1066.54,12.6,548,yes
+2026-08-01,AWS,aws-operations-dev,Operations,CC-300,Marcus Reed,dev,Lambda,res-00446,us-east-1,owner13@example.com,567,297.86,,40,yes
+2026-08-01,AWS,aws-sales-dev,Sales,CC-400,Dana Lopez,dev,EC2,res-00447,us-east-1,owner16@example.com,116,182.32,18.3,737,yes
+2026-08-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,EC2,res-00448,us-west-2,owner18@example.com,123,1255.84,35,216,yes
+2026-08-01,GCP,gcp-data-prod,Data,CC-200,Priya Shah,prod,Compute Engine,res-00449,us-central1,owner10@example.com,562,439.26,2.7,633,yes
+2026-08-01,AWS,aws-engineering-dev,Engineering,CC-100,Alex Chen,dev,CloudFront,res-00450,us-east-1,owner7@example.com,116,281.63,,509,yes
+2026-08-01,GCP,gcp-operations-prod,Operations,CC-300,Marcus Reed,prod,Cloud Functions,res-00451,us-central1,owner4@example.com,329,730.24,,218,yes
+2026-08-01,AWS,aws-finance-prod,Finance,,Jamie Park,prod,RDS,res-00452,us-east-1,owner13@example.com,595,317.43,,41,no
+2026-08-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,EC2,res-00453,us-east-1,owner9@example.com,687,1401.1,4,426,yes
+2026-08-01,GCP,gcp-engineering-dev,Engineering,CC-100,Alex Chen,dev,BigQuery,res-00454,us-west1,owner1@example.com,626,392.99,,90,yes
+2026-08-01,GCP,gcp-finance-prod,Finance,CC-500,Jamie Park,prod,Compute Engine,res-00455,us-central1,owner16@example.com,555,515.38,13.8,675,yes
+2026-08-01,GCP,gcp-operations-prod,Operations,CC-300,Marcus Reed,prod,Compute Engine,res-00456,us-west1,owner6@example.com,337,632.83,29.4,776,yes
+2026-08-01,AWS,aws-sales-dev,Sales,CC-400,Dana Lopez,dev,S3,res-00457,us-west-2,owner4@example.com,429,383.41,,1678,yes
+2026-08-01,Azure,azure-sales-test,Sales,CC-400,Dana Lopez,test,Blob Storage,res-00458,eastus,owner15@example.com,482,61.89,,4843,yes
+2026-08-01,AWS,aws-operations-test,Operations,CC-300,Marcus Reed,test,S3,res-00459,us-east-1,owner4@example.com,343,91.73,,1092,yes
+2026-08-01,AWS,aws-data-test,Data,CC-200,Priya Shah,test,RDS,res-00460,us-east-1,owner8@example.com,653,174.35,,626,yes
+2026-08-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,S3,res-00461,us-west-2,owner11@example.com,285,705.61,,168,yes
+2026-08-01,GCP,gcp-finance-test,Finance,CC-500,Jamie Park,test,Cloud Storage,res-00462,us-west1,owner14@example.com,45,140.93,,378,yes
+2026-08-01,Azure,azure-sales-prod,Sales,CC-400,Dana Lopez,prod,Virtual Machines,res-00463,eastus,,651,883.61,62.5,709,no
+2026-08-01,AWS,aws-finance-dev,Finance,CC-500,Jamie Park,dev,Lambda,res-00464,us-east-1,owner12@example.com,465,374.71,,474,yes
+2026-08-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,EBS,res-00465,us-west-2,owner18@example.com,543,393.54,,317,yes
+2026-08-01,Azure,azure-operations-dev,Operations,CC-300,Marcus Reed,dev,Bandwidth,res-00466,eastus,owner15@example.com,527,78.56,,690,yes
+2026-08-01,AWS,aws-engineering-dev,Engineering,CC-100,Alex Chen,dev,CloudFront,res-00467,us-east-1,owner7@example.com,141,100.88,,342,yes
+2026-08-01,AWS,aws-finance-dev,Finance,CC-500,Jamie Park,dev,RDS,res-00468,us-west-2,owner4@example.com,55,256.3,,64,yes
+2026-08-01,Azure,azure-sales-dev,Sales,CC-400,Dana Lopez,dev,Azure SQL,res-00469,eastus,owner3@example.com,192,230.74,,468,yes
+2026-08-01,Azure,azure-data-test,Data,CC-200,Priya Shah,test,Functions,res-00470,eastus,owner12@example.com,300,59.05,,426,yes
+2026-08-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,S3,res-00471,us-east-1,owner11@example.com,532,476.42,,2801,yes
+2026-08-01,AWS,aws-sales-prod,Sales,,Dana Lopez,prod,CloudFront,res-00472,us-east-1,owner10@example.com,313,748.27,,175,no
+2026-08-01,AWS,aws-data-dev,Data,CC-200,Priya Shah,dev,Lambda,res-00473,us-east-1,owner5@example.com,728,410.35,,548,yes
+2026-08-01,GCP,gcp-data-prod,Data,CC-200,Priya Shah,prod,BigQuery,res-00474,us-west1,owner12@example.com,188,672.74,,210,yes
+2026-08-01,GCP,gcp-operations-prod,Operations,CC-300,Marcus Reed,prod,BigQuery,res-00475,us-central1,,414,843.33,,511,no
+2026-08-01,GCP,gcp-operations-prod,Operations,CC-300,Marcus Reed,prod,Cloud SQL,res-00476,us-west1,owner15@example.com,587,328.79,,682,yes
+2026-08-01,AWS,aws-data-dev,Data,CC-200,Priya Shah,dev,EC2,res-00477,us-east-1,owner8@example.com,704,363.91,5,632,yes
+2026-08-01,AWS,aws-finance-test,Finance,CC-500,Jamie Park,test,EC2,res-00478,us-east-1,owner5@example.com,604,296.94,34.2,502,yes
+2026-08-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,EC2,res-00479,us-west-2,owner15@example.com,536,419.13,72.1,89,yes
+2026-08-01,GCP,gcp-sales-prod,Sales,CC-400,Dana Lopez,prod,Cloud Functions,res-00480,us-central1,,147,398.33,,212,no
+2026-08-01,Azure,azure-engineering-prod,Engineering,CC-100,Alex Chen,prod,Virtual Machines,res-00481,westus2,owner13@example.com,504,1140.77,16.8,473,yes
+2026-08-01,Azure,azure-finance-prod,Finance,CC-500,Jamie Park,prod,Azure SQL,res-00482,westus2,owner16@example.com,229,862.13,,27,yes
+2026-08-01,AWS,aws-sales-test,Sales,CC-400,Dana Lopez,test,S3,res-00483,us-east-1,owner12@example.com,29,243.54,,1027,yes
+2026-08-01,Azure,azure-engineering-prod,Engineering,,Alex Chen,prod,Functions,res-00484,eastus,owner5@example.com,265,598.79,,166,no
+2026-08-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,EBS,res-00485,us-west-2,owner4@example.com,542,549.98,,679,yes
+2026-08-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,RDS,res-00486,us-west-2,owner17@example.com,98,687.28,,547,yes
+2026-08-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,S3,res-00487,us-east-1,owner18@example.com,192,621.67,,4626,yes
+2026-08-01,Azure,azure-sales-test,Sales,CC-400,Dana Lopez,test,Functions,res-00488,eastus,owner15@example.com,134,109.77,,17,yes
+2026-08-01,Azure,azure-data-dev,Data,CC-200,Priya Shah,dev,Azure SQL,res-00489,eastus,owner10@example.com,121,356.42,,227,yes
+2026-08-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,EBS,res-00490,us-west-2,owner2@example.com,441,321.37,,398,yes
+2026-08-01,AWS,aws-engineering-dev,Engineering,CC-100,Alex Chen,dev,RDS,res-00491,us-east-1,owner1@example.com,616,151.81,,210,yes
+2026-08-01,GCP,gcp-operations-prod,Operations,CC-300,Marcus Reed,prod,BigQuery,res-00492,us-central1,owner17@example.com,517,263.58,,583,yes
+2026-08-01,AWS,aws-engineering-test,Engineering,CC-100,Alex Chen,test,CloudFront,res-00493,us-east-1,owner6@example.com,219,183.59,,516,yes
+2026-08-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,RDS,res-00494,us-east-1,owner17@example.com,417,837.45,,115,yes
+2026-08-01,Azure,azure-engineering-prod,Engineering,CC-100,Alex Chen,prod,Bandwidth,res-00495,westus2,owner15@example.com,118,384.2,,394,yes
+2026-08-01,GCP,gcp-data-test,Data,CC-200,Priya Shah,test,Cloud Functions,res-00496,us-west1,owner4@example.com,695,138.16,,376,yes
+2026-08-01,Azure,azure-data-prod,Data,CC-200,Priya Shah,prod,Virtual Machines,res-00497,eastus,owner16@example.com,252,874.11,13.7,203,yes
+2026-08-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,RDS,res-00498,us-west-2,owner9@example.com,496,437.92,,523,yes
+2026-08-01,GCP,gcp-engineering-dev,Engineering,CC-100,Alex Chen,dev,Compute Engine,res-00499,us-central1,owner17@example.com,590,628.06,3.1,183,yes
+2026-08-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,EBS,res-00500,us-west-2,owner2@example.com,555,762.83,,2864,yes
+2026-08-01,AWS,aws-operations-test,Operations,CC-300,Marcus Reed,test,Lambda,res-00501,us-west-2,owner10@example.com,470,219.28,,36,yes
+2026-08-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,RDS,res-00502,us-east-1,owner16@example.com,582,613.18,,691,yes
+2026-08-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,Lambda,res-00503,us-west-2,owner1@example.com,631,433.99,,692,yes
+2026-08-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,EBS,res-00504,us-west-2,owner2@example.com,389,488.27,,847,yes
+2026-08-01,AWS,aws-engineering-test,Engineering,CC-100,Alex Chen,test,CloudFront,res-00505,us-east-1,owner15@example.com,312,101.75,,117,yes
+2026-08-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,Lambda,res-00506,us-west-2,owner4@example.com,602,889.75,,22,yes
+2026-08-01,Azure,azure-sales-dev,Sales,CC-400,Dana Lopez,dev,Azure SQL,res-00507,westus2,owner3@example.com,170,470.34,,629,yes
+2026-08-01,AWS,aws-operations-test,Operations,CC-300,Marcus Reed,test,EC2,res-00508,us-west-2,owner17@example.com,311,200.26,52.3,94,yes
+2026-08-01,Azure,azure-finance-dev,Finance,CC-500,Jamie Park,dev,Azure SQL,res-00509,westus2,owner17@example.com,679,240.53,,552,yes
+2026-08-01,AWS,aws-finance-test,Finance,CC-500,Jamie Park,test,EC2,res-00510,us-west-2,owner14@example.com,298,212.93,55.2,760,yes
+2026-08-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,S3,res-00511,us-east-1,owner3@example.com,154,787.77,,2509,yes
+2026-08-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,RDS,res-00512,us-east-1,owner10@example.com,415,301.03,,244,yes
+2026-08-01,AWS,aws-engineering-prod,Engineering,,Alex Chen,prod,EBS,res-00513,us-west-2,owner6@example.com,139,366.05,,288,no
+2026-08-01,Azure,azure-engineering-test,Engineering,CC-100,Alex Chen,test,Virtual Machines,res-00514,eastus,owner5@example.com,401,226.79,15.2,65,yes
+2026-08-01,AWS,aws-finance-dev,Finance,CC-500,Jamie Park,dev,EC2,res-00515,us-west-2,owner8@example.com,588,422.94,72.9,243,yes
+2026-08-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,S3,res-00516,us-west-2,owner11@example.com,603,533.06,,508,yes
+2026-08-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,RDS,res-00517,us-west-2,owner2@example.com,315,741.39,,21,yes
+2026-08-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,CloudFront,res-00518,us-west-2,owner1@example.com,701,565.14,,124,yes
+2026-08-01,GCP,gcp-operations-prod,Operations,CC-300,Marcus Reed,prod,Cloud SQL,res-00519,us-central1,owner11@example.com,304,918.6,,215,yes
+2026-08-01,AWS,aws-operations-test,Operations,CC-300,Marcus Reed,test,EC2,res-00520,us-west-2,,562,263.07,61.2,340,no
+2026-08-01,Azure,azure-operations-prod,Operations,CC-300,Marcus Reed,prod,Bandwidth,res-00521,eastus,,53,641.95,,656,no
+2026-08-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,CloudFront,res-00522,us-east-1,owner14@example.com,528,878.16,,730,yes
+2026-08-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,EBS,res-00523,us-west-2,owner13@example.com,288,240.77,,1677,yes
+2026-08-01,AWS,aws-finance-dev,Finance,CC-500,Jamie Park,dev,EC2,res-00524,us-east-1,owner5@example.com,171,458.32,80,203,yes
+2026-08-01,GCP,gcp-engineering-dev,Engineering,CC-100,Alex Chen,dev,Compute Engine,res-00525,us-west1,owner10@example.com,544,522.86,68.4,506,yes
+2026-08-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,S3,res-00526,us-west-2,owner10@example.com,744,481.2,,1601,yes
+2026-08-01,AWS,aws-operations-dev,Operations,CC-300,Marcus Reed,dev,S3,res-00527,us-west-2,owner13@example.com,87,373.72,,134,yes
+2026-08-01,Azure,azure-operations-prod,Operations,CC-300,Marcus Reed,prod,Bandwidth,res-00528,eastus,,53,850.37,,340,no
+2026-08-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,Lambda,res-00529,us-east-1,owner15@example.com,594,367.41,,183,yes
+2026-08-01,AWS,aws-operations-prod,Operations,CC-300,Marcus Reed,prod,S3,res-00530,us-east-1,owner14@example.com,130,807.61,,4139,yes
+2026-08-01,AWS,aws-finance-prod,Finance,CC-500,Jamie Park,prod,RDS,res-00531,us-east-1,,323,1030.5,,754,no
+2026-08-01,AWS,aws-sales-prod,Sales,CC-400,Dana Lopez,prod,EC2,res-00532,us-west-2,owner16@example.com,526,261.71,12.2,506,yes
+2026-08-01,AWS,aws-engineering-prod,Engineering,CC-100,Alex Chen,prod,RDS,res-00533,us-west-2,owner7@example.com,184,827.95,,172,yes
+2026-08-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,CloudFront,res-00534,us-east-1,owner10@example.com,252,538.64,,786,yes
+2026-08-01,AWS,aws-engineering-test,Engineering,,Alex Chen,test,CloudFront,res-00535,us-east-1,owner9@example.com,29,135.57,,83,no
+2026-08-01,GCP,gcp-sales-prod,Sales,CC-400,Dana Lopez,prod,BigQuery,res-00536,us-central1,owner3@example.com,216,870.69,,49,yes
+2026-08-01,AWS,aws-data-prod,Data,CC-200,Priya Shah,prod,RDS,res-00537,us-west-2,owner10@example.com,91,912.74,,21,yes
+2026-08-01,AWS,aws-sales-dev,Sales,CC-400,Dana Lopez,dev,RDS,res-00538,us-west-2,owner17@example.com,701,344.53,,617,yes
+2026-08-01,AWS,aws-finance-dev,Finance,CC-500,Jamie Park,dev,RDS,res-00539,us-east-1,owner2@example.com,432,248.72,,377,yes
+2026-08-01,Azure,azure-sales-dev,Sales,CC-400,Dana Lopez,dev,Blob Storage,res-00540,eastus,owner5@example.com,297,386.59,,3885,yes

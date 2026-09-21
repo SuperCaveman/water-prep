@@ -123,4 +123,10 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **Takeaway:** Total spend fell 8.27% from June to July. The next operational question is what provider, service, or business-unit changes explain that variance; the percentage alone does not establish the cause.
 
-**Status:** Lab 01 complete. Next, practice the interview explanation and begin the Cloud/FinOps technical modules.
+**Lab 02 setup: Local SQL Cloud Billing Lab**
+
+**Environment:** Created a local SQLite database and a read-only query prompt from the same 540 synthetic billing records used in Lab 01.
+
+**Validation:** The database contains 540 records and reconciles to total monthly cost of `$227,448.97`.
+
+**Status:** Lab 01 complete. Lab 02 is ready for SQL exercises beginning with `SELECT`, `FROM`, `WHERE`, and `LIMIT`.
