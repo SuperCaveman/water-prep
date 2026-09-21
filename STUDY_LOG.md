@@ -196,3 +196,17 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 **How it works:** `WHERE` filters source rows before aggregation; `HAVING` filters grouped results after `SUM` has calculated each business unit's total.
 
 **Status:** Next, use `CASE` to classify resources for investigation.
+
+**Lab 02, Step 6: Classify review candidates with `CASE`**
+
+**Task:** Apply review labels to costly resources and long-running non-production resources.
+
+**Query pattern:** `CASE WHEN ... THEN ... WHEN ... THEN ... ELSE ... END AS review_status`
+
+**Result:** The ten highest-cost records were all labeled `Review high cost` because each exceeded `$1,000` per month.
+
+**How it works:** `CASE` provides ordered conditional logic in SQL. The first matching `WHEN` supplies the label, so the sequence of rules is meaningful.
+
+**Takeaway:** A review label prioritizes analysis. It is not an instruction to change a production workload without validating its purpose, utilization, and owner.
+
+**Status:** Next, add a cost-center lookup table and practice a SQL `JOIN`.
