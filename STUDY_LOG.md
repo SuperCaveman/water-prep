@@ -99,4 +99,6 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **Takeaway:** This report makes it easier to spot spend trends, compare departments, and drill into unusual changes before deciding on an optimization action.
 
+**Evidence:** ![Lab 01 PivotTable showing monthly cost by business unit and month](evidence/lab-01-pivottable.png)
+
 **Status:** Step 7 complete. Next, add cloud provider and service for drill-down, then calculate month-over-month spend change.
