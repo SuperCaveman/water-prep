@@ -27,4 +27,6 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **Why it matters:** A missing owner prevents clear accountability for cloud spend. This filter is a practical first step for identifying spend that needs ownership assignment before optimization or chargeback decisions.
 
-**Status:** Step 1 complete. Next, review the filtered rows and state the business risk in plain language.
+**Conclusion:** When the owner is blank, the organization cannot clearly identify the person or team accountable for that resource's cost.
+
+**Status:** Step 1 complete. Next, filter for missing cost-center values.
