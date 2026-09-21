@@ -236,3 +236,13 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 **Interview explanation:** “We allocated the shared cost based on each business unit's share of direct cloud spend. That is a consistent, transparent proxy for use; we publish the rule through showback and validate it with owners before applying chargeback.”
 
 **Status:** Next, compare allocation rules and investigate a cost variance.
+
+**Lab 03, Step 2: Identify a monthly cost-variance driver**
+
+**Task:** Compare service-level cost from June to July and rank the largest increases.
+
+**Result:** EBS had the largest increase, rising from `$5,418.98` in June to `$12,074.49` in July: a `$6,655.51` increase. CloudFront was second, increasing `$2,899.32`.
+
+**Interpretation:** EBS is the leading candidate for investigation. A cost increase alone does not prove waste or establish savings.
+
+**Next question:** Attribute the EBS increase to business unit, cloud provider, and owner before determining the operational cause or recommendation.
