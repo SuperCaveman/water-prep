@@ -184,3 +184,15 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 **Cross-check:** The Operations total matches the `SUMIFS` result from the spreadsheet lab.
 
 **Status:** Next, use `HAVING` to filter aggregated groups.
+
+**Lab 02, Step 5: Filter business-unit totals with `HAVING`**
+
+**Task:** Identify business units with total spend above `$45,000`.
+
+**Query:** `SELECT business_unit, SUM(monthly_cost) AS total_monthly_cost FROM cloud_billing GROUP BY business_unit HAVING SUM(monthly_cost) > 45000 ORDER BY total_monthly_cost DESC;`
+
+**Result:** Operations (`$51,674.36`) and Engineering (`$49,786.22`) met the threshold.
+
+**How it works:** `WHERE` filters source rows before aggregation; `HAVING` filters grouped results after `SUM` has calculated each business unit's total.
+
+**Status:** Next, use `CASE` to classify resources for investigation.
