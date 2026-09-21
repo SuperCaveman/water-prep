@@ -246,3 +246,11 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 **Interpretation:** EBS is the leading candidate for investigation. A cost increase alone does not prove waste or establish savings.
 
 **Next question:** Attribute the EBS increase to business unit, cloud provider, and owner before determining the operational cause or recommendation.
+
+**Lab 03, Step 3: Attribute the EBS variance**
+
+**Result:** Finance on AWS, owned by Jamie Park, had the largest EBS increase at `$2,020.62`. Engineering/AWS increased `$1,823.48`; Sales/AWS added `$1,768.92` of new EBS spend.
+
+**Interpretation:** The variance now has accountable business areas and owners. The next step is resource-level investigation, not an immediate optimization recommendation.
+
+**Status:** Inspect Finance/AWS EBS resources for environment, region, usage, storage, and cost drivers.
