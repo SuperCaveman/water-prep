@@ -39,4 +39,14 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **Conclusion:** Without a cost center, the organization cannot reliably allocate the resource's spend to the correct department for reporting or chargeback.
 
-**Status:** Step 2 complete. Next, identify high-cost production resources.
+**Lab 01, Step 3: High-cost production review**
+
+**Task:** Find production resources costing more than $500 per month.
+
+**Method:** Filtered `environment` to `prod`, then applied the condition `monthly_cost` greater than `500`.
+
+**Result:** 179 of 540 synthetic billing records met both conditions.
+
+**Takeaway:** High cost is a review signal, not proof of waste. The next step is to investigate utilization, business purpose, and ownership before recommending a change.
+
+**Status:** Step 3 complete. Next, describe a safe next action for this filtered set.
