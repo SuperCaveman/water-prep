@@ -8,7 +8,7 @@ This repository uses **synthetic data only**. It is designed as a learning lab a
 
 Build practical fluency for an early-career cloud/FinOps technical interview by working through one consistent synthetic cloud-billing dataset from raw data to business decisions.
 
-The learning path is deliberately ordered. We work one exercise at a time: attempt first, then receive feedback or a progressively stronger hint. This is a training lab, not a completed answer key.
+The learning path is deliberately ordered and built around repeatable, hands-on exercises. This repository presents the completed methods and results as a public-safe study portfolio.
 
 1. **Excel FinOps Lab** — tables, filters, `SUMIFS`, `COUNTIFS`, `XLOOKUP`, PivotTables, charts, conditional formatting, and month-over-month analysis.
 2. **SQL Cloud Billing Lab** — `SELECT`, `WHERE`, `ORDER BY`, aggregates, `GROUP BY`, `HAVING`, `CASE`, and joins.
@@ -16,15 +16,14 @@ The learning path is deliberately ordered. We work one exercise at a time: attem
 4. **FinOps Investigation Lab** — investigate a cloud-cost spike, identify drivers, validate ownership, quantify savings, and recommend action.
 5. **Dashboard & Mock Interview Lab** — build management-ready reporting and defend the analysis in technical interview scenarios.
 
-## Instructor mode
+## Learning approach
 
-For every Excel, SQL, Python, FinOps, and interview task:
+Each exercise follows a practical workflow:
 
-- Receive one objective and a brief concept explanation.
-- Attempt the work yourself before seeing a solution.
-- Receive feedback on what is correct and what needs adjustment.
-- Ask for a hint if needed; hints become more specific only when necessary.
-- See a complete answer only after an attempt or an explicit request.
+- Define the business or operational question.
+- Use the appropriate analysis tool and document the method.
+- Validate ownership, workload requirements, and operational risk before action.
+- Communicate a concise, evidence-based recommendation and verification plan.
 
 ## Why these skills matter
 
@@ -98,25 +97,25 @@ For operational troubleshooting, use:
 
 ## Progress checklist
 
-- [ ] Excel fundamentals — Lab 01: dataset orientation
-- [ ] SUMIFS / COUNTIFS
-- [ ] XLOOKUP
-- [ ] PivotTables and month-over-month analysis
-- [ ] SQL fundamentals and aggregation
-- [ ] SQL joins
-- [ ] FinOps fundamentals and tagging
-- [ ] Showback, chargeback, and shared-cost allocation
-- [ ] Forecasting and variance
-- [ ] Cost anomaly investigation
-- [ ] Cost optimization
+- [x] Excel fundamentals — Lab 01: dataset orientation
+- [x] SUMIFS / COUNTIFS
+- [x] XLOOKUP
+- [x] PivotTables and month-over-month analysis
+- [x] SQL fundamentals and aggregation
+- [x] SQL joins
+- [x] FinOps fundamentals and tagging
+- [x] Showback, chargeback, and shared-cost allocation
+- [x] Forecasting and variance
+- [x] Cost anomaly investigation
+- [x] Cost optimization
 - [ ] Power BI reporting
-- [ ] Cloud-operations troubleshooting
-- [ ] Mock technical interview
+- [x] Cloud-operations troubleshooting
+- [x] Mock technical interview
 
 ## Setup
 
-- Open `water_prep_excel_lab.xlsx` in Microsoft Excel.
-- Start on `Raw Billing`; use `Exercises` only to record your own work.
+- Open `water_prep_excel_lab.xlsx` in Microsoft Excel or Google Sheets.
+- Start on `Raw Billing`; use `Exercises` to reproduce the documented calculations.
 - No cloud account, production data, or Xylem internal information is required.
 
 ## Core FinOps concepts
@@ -133,4 +132,4 @@ See [the interview cheat sheet](docs/INTERVIEW_CHEAT_SHEET.md) for concise revie
 
 Start with `water_prep_excel_lab.xlsx`, beginning with the `Raw Billing` worksheet. The first task is to classify the dataset fields before doing any calculations.
 
-Do not rush ahead. The point is to become comfortable doing the work yourself.
+The repository emphasizes repeatable methods, operational safeguards, and clear stakeholder communication.

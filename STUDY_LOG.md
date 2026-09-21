@@ -1,6 +1,6 @@
-# Public Study Log
+# Hands-On Study Portfolio
 
-This is a curated record of hands-on cloud and FinOps study work. It documents objectives, attempts, feedback, and takeaways without reproducing private conversations, personal details, account information, or interview logistics.
+This is a curated record of hands-on cloud and FinOps study work. It documents completed exercises, methods, results, and operational takeaways without reproducing raw conversations, personal details, account information, or interview logistics.
 
 ## Session 1: Cloud Billing Dataset Orientation
 
@@ -17,7 +17,7 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 3. Usage and utilization
 4. Financial and cost measures
 
-**Attempt and feedback:** The first field reviewed was `account`. The initial attempt treated it as a spend value. Review clarified the distinction between an account label, which identifies a responsible billing scope, and `monthly_cost`, which contains the dollar amount. Therefore, `account` belongs to ownership and business context.
+**Outcome:** `account` identifies a responsible billing scope, while `monthly_cost` contains the dollar amount. Therefore, `account` belongs to ownership and business context.
 
 **Lab 01, Step 1: Missing ownership review**
 
@@ -129,7 +129,7 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **Validation:** The database contains 540 records and reconciles to total monthly cost of `$227,448.97`.
 
-**Status:** Lab 01 complete. Lab 02 is ready for SQL exercises beginning with `SELECT`, `FROM`, `WHERE`, and `LIMIT`.
+**Outcome:** Lab 01 established a spreadsheet-based foundation for cost attribution, ownership analysis, and trend reporting.
 
 **Lab 02, Step 1: Select billing columns**
 
@@ -141,7 +141,6 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **How it works:** `SELECT` chooses the columns, `FROM` names the table, and `LIMIT 5` keeps the result to a quick sample.
 
-**Status:** Next, use `WHERE` to filter production resources costing more than $500 per month.
 
 **Lab 02, Step 2: Filter costly production resources**
 
@@ -155,7 +154,6 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **Takeaway:** These records are investigation candidates, not proof of waste. Confirm business purpose, utilization, criticality, and owner before proposing a production change.
 
-**Status:** Next, sort the highest-cost resources with `ORDER BY`.
 
 **Lab 02, Step 3: Rank highest-cost resources**
 
@@ -169,7 +167,6 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **Takeaway:** Ranking focuses investigation on the largest cost drivers. It does not determine whether a resource should be changed; production workloads require owner and operational validation first.
 
-**Status:** Next, aggregate spend by business unit with `SUM` and `GROUP BY`.
 
 **Lab 02, Step 4: Aggregate spend by business unit**
 
@@ -183,7 +180,6 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **Cross-check:** The Operations total matches the `SUMIFS` result from the spreadsheet lab.
 
-**Status:** Next, use `HAVING` to filter aggregated groups.
 
 **Lab 02, Step 5: Filter business-unit totals with `HAVING`**
 
@@ -195,7 +191,6 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **How it works:** `WHERE` filters source rows before aggregation; `HAVING` filters grouped results after `SUM` has calculated each business unit's total.
 
-**Status:** Next, use `CASE` to classify resources for investigation.
 
 **Lab 02, Step 6: Classify review candidates with `CASE`**
 
@@ -209,7 +204,6 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **Takeaway:** A review label prioritizes analysis. It is not an instruction to change a production workload without validating its purpose, utilization, and owner.
 
-**Status:** Next, add a cost-center lookup table and practice a SQL `JOIN`.
 
 **Lab 02, Step 7: Map billing records with a SQL `JOIN`**
 
@@ -223,7 +217,7 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **Cross-check:** This is the SQL equivalent of the spreadsheet XLOOKUP that mapped `CC-300` to its chargeback owner.
 
-**Status:** SQL Lab 02 foundation complete. Next, practice concise interview explanations, then begin showback and chargeback allocation.
+**Outcome:** Lab 02 established a SQL foundation for sampling, filtering, ranking, aggregation, classification, and ownership lookup.
 
 **Lab 03, Step 1: Showback, chargeback, and shared-cost allocation**
 
@@ -235,7 +229,6 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **Interview explanation:** “We allocated the shared cost based on each business unit's share of direct cloud spend. That is a consistent, transparent proxy for use; we publish the rule through showback and validate it with owners before applying chargeback.”
 
-**Status:** Next, compare allocation rules and investigate a cost variance.
 
 **Lab 03, Step 2: Identify a monthly cost-variance driver**
 
@@ -245,7 +238,6 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **Interpretation:** EBS is the leading candidate for investigation. A cost increase alone does not prove waste or establish savings.
 
-**Next question:** Attribute the EBS increase to business unit, cloud provider, and owner before determining the operational cause or recommendation.
 
 **Lab 03, Step 3: Attribute the EBS variance**
 
@@ -253,7 +245,6 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **Interpretation:** The variance now has accountable business areas and owners. The next step is resource-level investigation, not an immediate optimization recommendation.
 
-**Status:** Inspect Finance/AWS EBS resources for environment, region, usage, storage, and cost drivers.
 
 **Lab 03, Step 4: Inspect Finance/AWS EBS resources**
 
@@ -261,7 +252,6 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **Interpretation:** The development volume is a candidate to review for scheduling or retention. Production volumes require owner, application, utilization, and resilience validation before any proposed change.
 
-**Status:** Compare Finance/AWS EBS spend by environment across June and July.
 
 **Lab 03, Step 5: Split the EBS variance by environment**
 
@@ -271,7 +261,7 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **Safeguard:** Neither amount is validated savings until the owner confirms the workload purpose and change path.
 
-**Status:** Prepare and practice a concise cost-investigation explanation.
+**Outcome:** Lab 03 demonstrated transparent allocation, cost-variance attribution, and the safeguards required before recommending storage optimization.
 
 **Lab 03, Step 6: Storage safeguards for optimization**
 
@@ -285,13 +275,12 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **Lab 04, Step 1: Cloud-operations incident triage**
 
-**First response:** Confirm scope before remediation: production versus non-production, start time, affected users and regions, and recent changes.
+**Initial triage:** Confirm scope before remediation: production versus non-production, start time, affected users and regions, and recent changes.
 
 **Evidence before action:** Review error rate, latency, load-balancer target health, application logs, and deployment history before restarting servers or changing configuration.
 
 **Why it matters:** A restart can mask the symptom and introduce a new change, making the original incident harder to diagnose.
 
-**Status:** Next, trace an unavailable application through load balancer, network, and application health checks.
 
 **Lab 04, Step 2: Load-balancer target health diagnosis**
 
@@ -301,7 +290,6 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **Reason-code guide:** A 404 suggests a health-check path or application-route mismatch. A timeout or connection refusal points to port, security group, service process, or network reachability. A 5xx indicates an application-level failure response.
 
-**Status:** Next, explain a safe remediation and verification approach.
 
 **Lab 04, Step 3: IAM AccessDenied troubleshooting**
 
@@ -311,9 +299,9 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **Safeguard:** Do not attach broad administrator access as a shortcut. An explicit deny overrides an allow; use the smallest permission change that addresses the verified failure.
 
-**Status:** Next, review common network reachability checks.
+**Outcome:** Lab 04 established an evidence-first approach to incident triage, load-balancer health diagnosis, and least-privilege IAM troubleshooting.
 
-**Lab 05, Mini Mock Interview: First technical responses**
+**Lab 05, Technical Interview Response Frameworks**
 
 **Cost variance:** Verify the dashboard change, then attribute it by provider, service, account, business unit, and owner. Do not turn off or resize resources merely because spend increased.
 
@@ -321,4 +309,4 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **EC2-to-S3 AccessDenied:** Start with the EC2 instance role, denied action, and requested object path. Then inspect bucket policy, organization controls, permission boundaries, session policies, and KMS permissions as applicable.
 
-**Status:** Continue mock practice with cloud cost, SQL, and communication scenarios.
+**Outcome:** Lab 05 consolidated concise, evidence-based explanations for cost variance, load-balancer, and IAM troubleshooting scenarios.
