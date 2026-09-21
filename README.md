@@ -127,6 +127,8 @@ Cost visibility, tagging, attribution, allocation, showback, chargeback, shared-
 
 State what changed, identify the likely owner and driver, distinguish facts from estimates, validate with the resource owner before action, and explain how you would measure the result afterward.
 
+See [the interview cheat sheet](docs/INTERVIEW_CHEAT_SHEET.md) for concise review prompts and examples from the hands-on labs.
+
 ## Getting started
 
 Start with `water_prep_excel_lab.xlsx`, beginning with the `Raw Billing` worksheet. The first task is to classify the dataset fields before doing any calculations.
