@@ -61,4 +61,16 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **How it works:** The formula adds values from column M (`monthly_cost`) only when the matching value in column D (`business_unit`) is `Operations`.
 
-**Status:** Step 4 complete. Next, count long-running non-production resources with `COUNTIFS`.
+**Lab 01, Step 5: Count long-running non-production resources with `COUNTIFS`**
+
+**Task:** Count resources that are not in production and have more than 650 usage hours.
+
+**Formula:** `=COUNTIFS('Raw Billing'!G:G,"<>prod",'Raw Billing'!L:L,">650")`
+
+**Result:** `52` resources
+
+**How it works:** `COUNTIFS` counts rows where `environment` is not `prod` and `usage_hours` exceeds 650. The `<>` operator means “not equal to.”
+
+**Takeaway:** Long-running non-production resources are candidates for investigation because development or test workloads may be able to follow a schedule. Validate their purpose and ownership before making a change.
+
+**Status:** Step 5 complete. Next, use `XLOOKUP` to map a cost center to its department or chargeback owner.
