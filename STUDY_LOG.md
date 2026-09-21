@@ -85,4 +85,18 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **Takeaway:** A lookup table translates billing metadata into accountable business information, which supports accurate showback or chargeback reporting.
 
-**Status:** Step 6 complete. Next, build a PivotTable to summarize monthly cost by business unit and month.
+**Lab 01, Step 7: PivotTable for monthly cost by business unit and month**
+
+**Task:** Create a decision-friendly summary of spend over time by business unit.
+
+**Configuration:**
+
+- **Rows:** `business_unit`
+- **Columns:** `month`
+- **Values:** `SUM of monthly_cost`
+
+**How it works:** The PivotTable groups the synthetic billing records by business unit and month, then totals monthly cost for every intersection.
+
+**Takeaway:** This report makes it easier to spot spend trends, compare departments, and drill into unusual changes before deciding on an optimization action.
+
+**Status:** Step 7 complete. Next, add cloud provider and service for drill-down, then calculate month-over-month spend change.
