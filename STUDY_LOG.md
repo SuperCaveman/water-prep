@@ -224,3 +224,15 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 **Cross-check:** This is the SQL equivalent of the spreadsheet XLOOKUP that mapped `CC-300` to its chargeback owner.
 
 **Status:** SQL Lab 02 foundation complete. Next, practice concise interview explanations, then begin showback and chargeback allocation.
+
+**Lab 03, Step 1: Showback, chargeback, and shared-cost allocation**
+
+**Scenario:** Allocate a `$10,000` shared cloud-platform cost using each business unit's share of direct cloud spend.
+
+**Example:** Operations represented `22.72%` of direct spend, so its allocated share was `$2,271.91`.
+
+**Key distinction:** Showback reports the allocated amount to a team for visibility and accountability. Chargeback assigns that amount to the team's budget or cost center.
+
+**Interview explanation:** “We allocated the shared cost based on each business unit's share of direct cloud spend. That is a consistent, transparent proxy for use; we publish the rule through showback and validate it with owners before applying chargeback.”
+
+**Status:** Next, compare allocation rules and investigate a cost variance.
