@@ -282,3 +282,13 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 **S3 distinction:** S3 is object storage for files in buckets, while EBS is block storage for server-attached volumes.
 
 **Safeguard:** Never infer that an EBS volume is safe to delete solely because it is costly or associated with development.
+
+**Lab 04, Step 1: Cloud-operations incident triage**
+
+**First response:** Confirm scope before remediation: production versus non-production, start time, affected users and regions, and recent changes.
+
+**Evidence before action:** Review error rate, latency, load-balancer target health, application logs, and deployment history before restarting servers or changing configuration.
+
+**Why it matters:** A restart can mask the symptom and introduce a new change, making the original incident harder to diagnose.
+
+**Status:** Next, trace an unavailable application through load balancer, network, and application health checks.
