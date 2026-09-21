@@ -37,4 +37,6 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **Result:** The filtered view isolated resources that have a business unit but no cost-center assignment.
 
-**Status:** Step 2 filtering complete. Next, explain the reporting and allocation risk of a missing cost center.
+**Conclusion:** Without a cost center, the organization cannot reliably allocate the resource's spend to the correct department for reporting or chargeback.
+
+**Status:** Step 2 complete. Next, identify high-cost production resources.
