@@ -101,4 +101,14 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **Evidence:** ![Lab 01 PivotTable showing monthly cost by business unit and month](evidence/lab-01-pivottable.png)
 
-**Status:** Step 7 complete. Next, add cloud provider and service for drill-down, then calculate month-over-month spend change.
+**Lab 01, Step 8: PivotTable drill-down by cloud provider and service**
+
+**Task:** Extend the business-unit cost trend report so a reviewer can isolate provider and service-level drivers.
+
+**Configuration:** Added `cloud_provider` and `service` beneath `business_unit` in the PivotTable Rows area; retained `month` as Columns and `SUM of monthly_cost` as Values.
+
+**How it works:** The row hierarchy supports progressive analysis: business unit → cloud provider → service. A double-click on a PivotTable value can also create a detail sheet containing the source rows behind that total.
+
+**Takeaway:** A cost trend is only the starting point. Drill-down makes it possible to trace a variance to the provider and service producing it before engaging the accountable owner.
+
+**Status:** Step 8 complete. Next, calculate month-over-month total-spend change.
