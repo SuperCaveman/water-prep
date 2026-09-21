@@ -111,4 +111,16 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **Takeaway:** A cost trend is only the starting point. Drill-down makes it possible to trace a variance to the provider and service producing it before engaging the accountable owner.
 
-**Status:** Step 8 complete. Next, calculate month-over-month total-spend change.
+**Lab 01, Step 9: Month-over-month total spend change**
+
+**Task:** Calculate the percent change in total spend from June 2026 to July 2026.
+
+**Formula:** `=(SUMIFS('Raw Billing'!M:M,'Raw Billing'!A:A,DATE(2026,7,1))-SUMIFS('Raw Billing'!M:M,'Raw Billing'!A:A,DATE(2026,6,1)))/SUMIFS('Raw Billing'!M:M,'Raw Billing'!A:A,DATE(2026,6,1))`
+
+**Result:** `-8.27%`
+
+**How it works:** The formula sums monthly cost for each month, subtracts June from July, then divides by June to express the change as a percentage. It references raw billing data so the result remains stable even if a PivotTable drill-down changes the layout of totals.
+
+**Takeaway:** Total spend fell 8.27% from June to July. The next operational question is what provider, service, or business-unit changes explain that variance; the percentage alone does not establish the cause.
+
+**Status:** Lab 01 complete. Next, practice the interview explanation and begin the Cloud/FinOps technical modules.
