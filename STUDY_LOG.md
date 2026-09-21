@@ -210,3 +210,17 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 **Takeaway:** A review label prioritizes analysis. It is not an instruction to change a production workload without validating its purpose, utilization, and owner.
 
 **Status:** Next, add a cost-center lookup table and practice a SQL `JOIN`.
+
+**Lab 02, Step 7: Map billing records with a SQL `JOIN`**
+
+**Task:** Attach department and chargeback-owner information to billing resources with cost center `CC-300`.
+
+**Query:** `SELECT b.resource_id, b.cost_center, c.department_name, c.chargeback_owner FROM cloud_billing AS b JOIN cost_centers AS c ON b.cost_center = c.cost_center WHERE b.cost_center = 'CC-300' LIMIT 5;`
+
+**Result:** Each returned resource mapped to Operations and chargeback owner Marcus Reed.
+
+**How it works:** `JOIN` combines rows from `cloud_billing` and `cost_centers` where their `cost_center` values match. `b` and `c` are short aliases for the tables.
+
+**Cross-check:** This is the SQL equivalent of the spreadsheet XLOOKUP that mapped `CC-300` to its chargeback owner.
+
+**Status:** SQL Lab 02 foundation complete. Next, practice concise interview explanations, then begin showback and chargeback allocation.
