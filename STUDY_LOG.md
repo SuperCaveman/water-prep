@@ -302,3 +302,13 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 **Reason-code guide:** A 404 suggests a health-check path or application-route mismatch. A timeout or connection refusal points to port, security group, service process, or network reachability. A 5xx indicates an application-level failure response.
 
 **Status:** Next, explain a safe remediation and verification approach.
+
+**Lab 04, Step 3: IAM AccessDenied troubleshooting**
+
+**First checks:** Identify the calling IAM principal, denied API action, target resource, and the policy evaluation path before changing permissions.
+
+**EC2-to-S3 example:** Inspect the IAM role attached to the EC2 instance for `s3:GetObject` on the required bucket/object path. If it already allows access, inspect the bucket policy, service control policy, permission boundary or session policy, and KMS key permission for encrypted objects.
+
+**Safeguard:** Do not attach broad administrator access as a shortcut. An explicit deny overrides an allow; use the smallest permission change that addresses the verified failure.
+
+**Status:** Next, review common network reachability checks.
