@@ -170,3 +170,17 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 **Takeaway:** Ranking focuses investigation on the largest cost drivers. It does not determine whether a resource should be changed; production workloads require owner and operational validation first.
 
 **Status:** Next, aggregate spend by business unit with `SUM` and `GROUP BY`.
+
+**Lab 02, Step 4: Aggregate spend by business unit**
+
+**Task:** Calculate total monthly cost for each business unit and rank them from largest to smallest.
+
+**Query:** `SELECT business_unit, SUM(monthly_cost) AS total_monthly_cost FROM cloud_billing GROUP BY business_unit ORDER BY total_monthly_cost DESC;`
+
+**Result:** Operations was highest at `$51,674.36`, followed by Engineering at `$49,786.22`.
+
+**How it works:** `SUM(monthly_cost)` adds cost values. `GROUP BY business_unit` produces one total per business unit. The alias `total_monthly_cost` gives the calculated column a readable name.
+
+**Cross-check:** The Operations total matches the `SUMIFS` result from the spreadsheet lab.
+
+**Status:** Next, use `HAVING` to filter aggregated groups.
