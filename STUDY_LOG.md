@@ -49,4 +49,6 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **Takeaway:** High cost is a review signal, not proof of waste. The next step is to investigate utilization, business purpose, and ownership before recommending a change.
 
-**Status:** Step 3 complete. Next, describe a safe next action for this filtered set.
+**Operational safeguard:** Do not immediately shut down or resize a costly production resource. First confirm what it supports, whether it is appropriately utilized, how critical it is, and who owns the decision.
+
+**Status:** Step 3 complete. Next, calculate total spend by business unit with `SUMIFS`.
