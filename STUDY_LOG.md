@@ -19,4 +19,12 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **Attempt and feedback:** The first field reviewed was `account`. The initial attempt treated it as a spend value. Review clarified the distinction between an account label, which identifies a responsible billing scope, and `monthly_cost`, which contains the dollar amount. Therefore, `account` belongs to ownership and business context.
 
-**Status:** In progress. Next, classify `usage_hours`.
+**Lab 01, Step 1: Missing ownership review**
+
+**Task:** Filter the `owner` field to show blank values only.
+
+**Method:** Used the column filter, cleared all selected values, selected only `(Blanks)`, and applied the filter.
+
+**Why it matters:** A missing owner prevents clear accountability for cloud spend. This filter is a practical first step for identifying spend that needs ownership assignment before optimization or chargeback decisions.
+
+**Status:** Step 1 complete. Next, review the filtered rows and state the business risk in plain language.
