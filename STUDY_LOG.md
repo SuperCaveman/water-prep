@@ -29,4 +29,12 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **Conclusion:** When the owner is blank, the organization cannot clearly identify the person or team accountable for that resource's cost.
 
-**Status:** Step 1 complete. Next, filter for missing cost-center values.
+**Lab 01, Step 2: Missing cost-center review**
+
+**Task:** Filter the `cost_center` field to show blank values only.
+
+**Method:** Reset the prior filter, then used the `cost_center` column filter to select only `(Blanks)`.
+
+**Result:** The filtered view isolated resources that have a business unit but no cost-center assignment.
+
+**Status:** Step 2 filtering complete. Next, explain the reporting and allocation risk of a missing cost center.
