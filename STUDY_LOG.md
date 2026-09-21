@@ -272,3 +272,13 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 **Safeguard:** Neither amount is validated savings until the owner confirms the workload purpose and change path.
 
 **Status:** Prepare and practice a concise cost-investigation explanation.
+
+**Lab 03, Step 6: Storage safeguards for optimization**
+
+**EBS:** Elastic Block Store is AWS block storage, similar to a virtual disk attached to an EC2 instance. Its storage cost can continue after an EC2 instance is stopped while the volume remains.
+
+**Retention:** A defined period for keeping data or backups before deletion. Review whether a development EBS volume is attached, needed, backed up, or subject to a retention requirement before any removal.
+
+**S3 distinction:** S3 is object storage for files in buckets, while EBS is block storage for server-attached volumes.
+
+**Safeguard:** Never infer that an EBS volume is safe to delete solely because it is costly or associated with development.
