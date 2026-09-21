@@ -51,4 +51,14 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 
 **Operational safeguard:** Do not immediately shut down or resize a costly production resource. First confirm what it supports, whether it is appropriately utilized, how critical it is, and who owns the decision.
 
-**Status:** Step 3 complete. Next, calculate total spend by business unit with `SUMIFS`.
+**Lab 01, Step 4: Total spend by business unit with `SUMIFS`**
+
+**Task:** Calculate total `monthly_cost` for the Operations business unit.
+
+**Formula:** `=SUMIFS('Raw Billing'!M:M,'Raw Billing'!D:D,"Operations")`
+
+**Result:** `$51,674.36`
+
+**How it works:** The formula adds values from column M (`monthly_cost`) only when the matching value in column D (`business_unit`) is `Operations`.
+
+**Status:** Step 4 complete. Next, count long-running non-production resources with `COUNTIFS`.
