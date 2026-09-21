@@ -142,3 +142,17 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 **How it works:** `SELECT` chooses the columns, `FROM` names the table, and `LIMIT 5` keeps the result to a quick sample.
 
 **Status:** Next, use `WHERE` to filter production resources costing more than $500 per month.
+
+**Lab 02, Step 2: Filter costly production resources**
+
+**Task:** Return production resources costing more than $500 per month.
+
+**Query:** `SELECT cloud_provider, service, monthly_cost FROM cloud_billing WHERE environment = 'prod' AND monthly_cost > 500 LIMIT 5;`
+
+**Result:** Returned five qualifying records from the synthetic billing data.
+
+**How it works:** `WHERE` applies row-level conditions. `AND` requires both conditions to be true: the resource must be in `prod` and have a monthly cost above 500.
+
+**Takeaway:** These records are investigation candidates, not proof of waste. Confirm business purpose, utilization, criticality, and owner before proposing a production change.
+
+**Status:** Next, sort the highest-cost resources with `ORDER BY`.
