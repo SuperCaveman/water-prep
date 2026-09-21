@@ -156,3 +156,17 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 **Takeaway:** These records are investigation candidates, not proof of waste. Confirm business purpose, utilization, criticality, and owner before proposing a production change.
 
 **Status:** Next, sort the highest-cost resources with `ORDER BY`.
+
+**Lab 02, Step 3: Rank highest-cost resources**
+
+**Task:** Return the five highest monthly-cost resources across the synthetic billing dataset.
+
+**Query:** `SELECT cloud_provider, service, environment, monthly_cost FROM cloud_billing ORDER BY monthly_cost DESC LIMIT 5;`
+
+**Result:** The top five records were all production resources. The highest was AWS EC2 at `$1,401.10` per month.
+
+**How it works:** `ORDER BY monthly_cost DESC` sorts from highest to lowest. `LIMIT 5` returns only the first five rows.
+
+**Takeaway:** Ranking focuses investigation on the largest cost drivers. It does not determine whether a resource should be changed; production workloads require owner and operational validation first.
+
+**Status:** Next, aggregate spend by business unit with `SUM` and `GROUP BY`.
