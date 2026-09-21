@@ -18,6 +18,8 @@ cloud_billing
 
 The columns match the spreadsheet: month, cloud_provider, account, business_unit, cost_center, chargeback_owner, environment, service, resource_id, region, owner, usage_hours, monthly_cost, cpu_utilization_pct, storage_gb, and tags_complete.
 
+A second lookup table, `cost_centers`, contains `cost_center`, `department_name`, and `chargeback_owner` for JOIN practice.
+
 ## Lab sequence
 
 1. Select columns and limit results.

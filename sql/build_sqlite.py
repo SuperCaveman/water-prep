@@ -69,8 +69,22 @@ def read_raw_billing() -> tuple[list[str], list[list[str]]]:
     return rows[0], rows[1:]
 
 
+def read_cost_centers() -> tuple[list[str], list[list[str]]]:
+    with zipfile.ZipFile(WORKBOOK) as archive:
+        shared_strings = read_shared_strings(archive)
+        root = ET.fromstring(archive.read("xl/worksheets/sheet2.xml"))
+        rows: list[list[str]] = []
+        for row in root.findall(".//x:sheetData/x:row", NS):
+            values = [""] * 3
+            for cell in row.findall("x:c", NS):
+                values[column_index(cell.get("r", "A1"))] = cell_value(cell, shared_strings)
+            rows.append(values)
+    return rows[0], rows[1:]
+
+
 def main() -> None:
     headers, rows = read_raw_billing()
+    cost_center_headers, cost_center_rows = read_cost_centers()
     expected_headers = [
         "month", "cloud_provider", "account", "business_unit", "cost_center",
         "chargeback_owner", "environment", "service", "resource_id", "region",
@@ -81,12 +95,21 @@ def main() -> None:
         raise ValueError(f"Unexpected Raw Billing headers: {headers}")
     if len(rows) != 540:
         raise ValueError(f"Expected 540 synthetic records, found {len(rows)}")
+    if cost_center_headers != ["cost_center", "department_name", "chargeback_owner"]:
+        raise ValueError(f"Unexpected Cost Centers headers: {cost_center_headers}")
+    if len(cost_center_rows) != 5:
+        raise ValueError(f"Expected 5 cost-center mappings, found {len(cost_center_rows)}")
 
     CSV_FILE.parent.mkdir(exist_ok=True)
     with CSV_FILE.open("w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
         writer.writerow(headers)
         writer.writerows(rows)
+    cost_center_csv = ROOT / "data" / "cost_centers.csv"
+    with cost_center_csv.open("w", newline="", encoding="utf-8") as file:
+        writer = csv.writer(file)
+        writer.writerow(cost_center_headers)
+        writer.writerows(cost_center_rows)
 
     if DATABASE.exists():
         DATABASE.unlink()
@@ -114,15 +137,28 @@ def main() -> None:
         )
         connection.execute("CREATE INDEX idx_billing_month ON cloud_billing(month)")
         connection.execute("CREATE INDEX idx_billing_environment ON cloud_billing(environment)")
+        connection.execute("""
+            CREATE TABLE cost_centers (
+                cost_center TEXT PRIMARY KEY,
+                department_name TEXT NOT NULL,
+                chargeback_owner TEXT NOT NULL
+            )
+        """)
+        connection.executemany(
+            "INSERT INTO cost_centers VALUES (?, ?, ?)",
+            cost_center_rows,
+        )
         record_count, total_cost = connection.execute(
             "SELECT COUNT(*), ROUND(SUM(monthly_cost), 2) FROM cloud_billing"
         ).fetchone()
+        mapping_count = connection.execute("SELECT COUNT(*) FROM cost_centers").fetchone()[0]
         connection.commit()
     finally:
         connection.close()
 
     print(f"Created {DATABASE.relative_to(ROOT)} with {record_count} synthetic records.")
     print(f"Wrote {CSV_FILE.relative_to(ROOT)}. Total monthly cost: ${total_cost:,.2f}")
+    print(f"Wrote {cost_center_csv.relative_to(ROOT)} with {mapping_count} cost-center mappings.")
 
 
 if __name__ == "__main__":
