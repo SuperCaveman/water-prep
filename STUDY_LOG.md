@@ -262,3 +262,13 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 **Interpretation:** The development volume is a candidate to review for scheduling or retention. Production volumes require owner, application, utilization, and resilience validation before any proposed change.
 
 **Status:** Compare Finance/AWS EBS spend by environment across June and July.
+
+**Lab 03, Step 5: Split the EBS variance by environment**
+
+**Result:** Finance/AWS production EBS increased `$1,415.33` from June to July. Development EBS was new in July at `$605.29`.
+
+**Recommendation framing:** Investigate production growth with the owner and application context first. Separately, review development volumes for schedule, retention, and deletion eligibility under the applicable policy.
+
+**Safeguard:** Neither amount is validated savings until the owner confirms the workload purpose and change path.
+
+**Status:** Prepare and practice a concise cost-investigation explanation.
