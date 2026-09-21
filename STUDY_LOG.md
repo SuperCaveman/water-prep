@@ -17,4 +17,6 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 3. Usage and utilization
 4. Financial and cost measures
 
-**Status:** In progress. The classification will be recorded here after it is attempted and reviewed.
+**Attempt and feedback:** The first field reviewed was `account`. The initial attempt treated it as a spend value. Review clarified the distinction between an account label, which identifies a responsible billing scope, and `monthly_cost`, which contains the dollar amount. Therefore, `account` belongs to ownership and business context.
+
+**Status:** In progress. Next, classify `usage_hours`.
