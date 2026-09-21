@@ -292,3 +292,13 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 **Why it matters:** A restart can mask the symptom and introduce a new change, making the original incident harder to diagnose.
 
 **Status:** Next, trace an unavailable application through load balancer, network, and application health checks.
+
+**Lab 04, Step 2: Load-balancer target health diagnosis**
+
+**Scenario:** The load balancer is reachable but returns 503 because its targets are unhealthy.
+
+**Check order:** Inspect target-group health status and its reason code, then validate health-check path and port, security-group reachability, application process/logs, and recent deployment changes.
+
+**Reason-code guide:** A 404 suggests a health-check path or application-route mismatch. A timeout or connection refusal points to port, security group, service process, or network reachability. A 5xx indicates an application-level failure response.
+
+**Status:** Next, explain a safe remediation and verification approach.
