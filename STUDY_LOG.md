@@ -130,3 +130,15 @@ This is a curated record of hands-on cloud and FinOps study work. It documents o
 **Validation:** The database contains 540 records and reconciles to total monthly cost of `$227,448.97`.
 
 **Status:** Lab 01 complete. Lab 02 is ready for SQL exercises beginning with `SELECT`, `FROM`, `WHERE`, and `LIMIT`.
+
+**Lab 02, Step 1: Select billing columns**
+
+**Task:** Return a small sample of cloud provider and monthly cost values from the local synthetic billing table.
+
+**Query:** `SELECT cloud_provider, monthly_cost FROM cloud_billing LIMIT 5;`
+
+**Result:** Returned five rows successfully.
+
+**How it works:** `SELECT` chooses the columns, `FROM` names the table, and `LIMIT 5` keeps the result to a quick sample.
+
+**Status:** Next, use `WHERE` to filter production resources costing more than $500 per month.
