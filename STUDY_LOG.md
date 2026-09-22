@@ -2,6 +2,62 @@
 
 This is a curated record of hands-on cloud and FinOps study work. It documents completed exercises, methods, results, and operational takeaways without reproducing raw conversations, personal details, account information, or interview logistics.
 
+## Interview Cram Sheet: Role-Aligned Priorities
+
+Public postings describe this as a Cloud Operations, FinOps, and reporting role—not a generic AWS certification role. The work emphasizes actionable cost, utilization, operational-readiness, security, and performance dashboards; billing-data analysis; allocation, forecasting, showback, and chargeback; Excel; BI modernization; access requests; routine service support; documentation; stakeholder coordination; and on-call readiness. [Role listing](https://builtin.com/job/cloud-engineer/10913648) · [Matching posting](https://www.monster.com/job-openings/cloud-engineer-morrisville-nc--ad8553a2-e6f5-478f-8b38-1a6c4115aa6a)
+
+### Top FinOps and cloud questions
+
+**1. “Cloud spend increased 30%. Walk me through your investigation.”**
+
+> “I would validate the variance in Cost Explorer, break it down by provider, account, service, region, environment, business unit, and owner, then identify the largest deltas. I would use CloudWatch or Datadog to validate whether usage, traffic, or a deployment explains the change. I would confirm findings with the owner, recommend an approved action if appropriate, and measure workload health and realized savings afterward.”
+
+**Key rule:** Expensive is a review signal, not proof of waste.
+
+**2. “Explain showback, chargeback, and allocation of a shared cost.”**
+
+> “Showback makes a team’s cloud cost visible; chargeback assigns it to that team’s cost center or budget. Direct costs use ownership tags. For shared costs, I would use the most relevant usage driver—such as log volume for monitoring or GB for storage. If usage data is not available, I would use a transparent temporary proxy, such as direct-spend share, and validate the method with Finance and Engineering.”
+
+**Likely follow-up:** For unallocated spend, quantify it, prioritize high-cost untagged resources, identify ownership, correct tags, and add governance or automation to prevent recurrence.
+
+**3. “What would you put in a cloud cost/performance dashboard?”**
+
+Use **SCODA**: **Spend, Change, Owner, Driver, Action.**
+
+> “I would show total spend and forecast; month-over-month variance; business unit, cost center, and owner; top provider, service, and environment drivers; and an action queue for unallocated spend, anomalies, and optimization reviews. I would add selected performance, security, and operational-readiness signals where they explain cost or risk.”
+
+For AWS, use Cost Explorer or a Cost and Usage Report for billing data, then CloudWatch or Datadog for performance context. [AWS Cost Explorer](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-default-reports.html) · [AWS CUR](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html)
+
+### Top Excel questions
+
+**1. “Build a report showing monthly spend by business unit.”**
+
+> “Create a PivotTable with `business_unit` in Rows, `month` in Columns, and `SUM of monthly_cost` in Values. Add provider, service, or environment for drill-down.”
+
+**2. “How would you calculate spend for one business unit and find its chargeback owner?”**
+
+```excel
+=SUMIFS('Raw Billing'!M:M,'Raw Billing'!D:D,"Operations")
+=XLOOKUP("CC-300",'Cost Centers'!A:A,'Cost Centers'!C:C)
+```
+
+`SUMIFS` totals costs that match criteria; `XLOOKUP` maps billing metadata, such as a cost center, to ownership information.
+
+**3. “How would you find and prevent poor billing-data quality?”**
+
+> “Filter for blank owner and cost-center values, quantify unallocated spend, and prioritize the highest-cost gaps. Use data-validation dropdowns for fields such as environment, business unit, and cost center so future entries follow a controlled standard.”
+
+### Additional role signals
+
+- Dashboards should cover **cost, utilization, performance, security, and readiness**—not cost alone.
+- For access requests and service issues: identify the principal, action, resource, and error; use least privilege; test, document, and escalate when appropriate.
+- For BI modernization, use: **Source → clean → model → visualize → refresh.**
+- Be ready to discuss Jira/documentation, Finance and Engineering collaboration, recurring deadlines, and stakeholder communication.
+- For an AI proof of concept: define the business problem, data/security constraints, cost and success measures, run a limited POC, document findings, and scale only after validation.
+- Know basic multi-cloud equivalents without overstating depth: AWS Account / Azure Subscription / GCP Project; EC2 / Azure Virtual Machines / Google Compute Engine; S3 / Azure Blob Storage / Google Cloud Storage.
+
+**Core message:** Turn cloud data into a validated, owner-approved business decision.
+
 ## Session 1: Cloud Billing Dataset Orientation
 
 **Objective:** Classify the fields in a synthetic multi-cloud billing dataset before building calculations.
